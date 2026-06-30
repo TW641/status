@@ -4,7 +4,7 @@
   "name": "TW641 Status",
   "short_name": "TW641 Status",
   "display": "minimal-ui",
-  "start_url": "/status/",
+  "start_url": "/",
   "icons": [
     {
       "src": "/TW641.png",
