@@ -215,7 +215,7 @@ status-website:
     - TW641 GitHub Pages 官方主站 - padavan-builder-workflow
     - TW641 GitHub Pages 官方主站 - padavan-ng
     - TW641 GitHub Pages 官方主站 - padavan-4.4
-    以及 Cloudflare、Firebase、GitLab、Netlify、Vercel、Render、Surge 等多個備援平台的監測。
+    以及 Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge 等多個備援平台的監測。
     
     採用開源方案 Upptime，無需額外伺服器。
     </div>
@@ -230,9 +230,9 @@ status-website:
   name: TW641 Status
   introTitle: "TW641 Real-time Uptime Monitor | 70 Nodes Global Availability Status"
   introMessage: |
-    TW641 即時監測服務狀態頁面，監測官方主站與全球 10 大備援站點，共 70 個節點的可用性。
+    TW641 即時監測服務狀態頁面，監測官方主站與全球備援 10 大站點，共 70 個節點的可用性。
     
-    **監測平台：** GitHub Pages、Cloudflare Pages、Firebase Hosting、GitLab Pages、Netlify、Vercel、Render、Surge
+    **監測平台：** GitHub Pages、Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge
     
     **採用方案：** Upptime 開源架構，透過 GitHub Actions 自動化監測，無需額外伺服器。
 
