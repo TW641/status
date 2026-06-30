@@ -192,7 +192,7 @@ status-website:
     - name: "robots"
       content: "index, follow"
   favicon: /TW641.png
-  baseUrl: /status/
+  baseUrl: /$REPO/
   logoUrl: /TW641.png
   name: TW641 Status
   introTitle: "**TW641 Status** is the open-source uptime monitor and status page, powered entirely by GitHub."
