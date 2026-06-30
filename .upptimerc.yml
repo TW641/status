@@ -191,7 +191,8 @@ status-website:
     <link rel="canonical" href="https://tw641.github.io/status/">
     <meta name="google-site-verification" content="-vHIVPvpGauTz39uKyANi2BPSfJwrsrxGVMagKliEgE">
     <meta name="google-site-verification" content="OV7xROgDy7S6bx5Mrsf5hefCfoKkRYgE0F9raeoZ8qc">
-    customBodyHtml: |
+
+  customBodyHtml: |
     <div style="display: none; position: absolute;">
     TW641 Status Page - 即時服務監測系統
     監測以下 10 個平台的 70 個節點：
@@ -216,7 +217,7 @@ status-website:
     - TW641 GitHub Pages 官方主站 - padavan-4.4
     以及 Cloudflare、Firebase、GitLab、Netlify、Vercel、Render、Surge 等多個備援平台的監測。
     
-    採用開源技術 Upptime，無需額外伺服器。
+    採用開源方案 Upptime，無需額外伺服器。
     </div>
   
   robotsText: "User-agent: *\nAllow: /"
@@ -229,11 +230,11 @@ status-website:
   name: TW641 Status
   introTitle: "TW641 Real-time Uptime Monitor | 70 Nodes Global Availability Status"
   introMessage: |
-    TW641 即時監測服務狀態頁面，監測官方主站與全球 10 大備援站點共 70 個節點的可用性。
+    TW641 即時監測服務狀態頁面，監測官方主站與全球 10 大備援站點，共 70 個節點的可用性。
     
     **監測平台：** GitHub Pages、Cloudflare Pages、Firebase Hosting、GitLab Pages、Netlify、Vercel、Render、Surge
     
-    **採用技術：** 開源 Upptime 平台，通過 GitHub Actions 自動化監測，無需額外伺服器。
+    **採用方案：** Upptime 開源架構，透過 GitHub Actions 自動化監測，無需額外伺服器。
 
   navbar:
     - title: Status
