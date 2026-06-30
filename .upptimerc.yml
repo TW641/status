@@ -192,14 +192,14 @@ status-website:
     - name: "robots"
       content: "index, follow"
   favicon: /TW641.png
-  baseUrl: /$REPO/
+  baseUrl: /status
   logoUrl: /TW641.png
   name: TW641 Status
   introTitle: "**TW641 Status** is the open-source uptime monitor and status page, powered entirely by GitHub."
   introMessage: 這是 TW641 的自動化服務狀態頁面，即時監測官方主站與全球 10 大備援站點 (共 70 個節點)。Uses **real-time** data from our [GitHub repository](https://github.com/TW641/status). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
   navbar:
     - title: Status
-      href: /status/
+      href: /status
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
