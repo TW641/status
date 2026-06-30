@@ -230,10 +230,12 @@ status-website:
   name: TW641 Status
   introTitle: "TW641 Real-time Uptime Monitor | 70 Nodes Global Availability Status"
   introMessage: |
-    TW641 即時監測服務狀態頁面，監測官方主站與全球備援 10 大站點，共 70 個節點的可用性。\n
-    
-    **監測平台：** GitHub Pages、Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge\n
-    
+    TW641 即時監測服務狀態頁面，監測官方主站與全球備援 10 大站點，共 70 個節點的可用性。
+
+
+    **監測平台：** GitHub Pages、Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge
+
+
     **採用方案：** Upptime 開源架構，透過 GitHub Actions 自動化監測，無需額外伺服器。
 
   navbar:
