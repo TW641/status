@@ -187,7 +187,8 @@ status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
-  robotsText: "User-agent: *\nAllow: /\n\nSitemap: https://tw641.github.io/status/sitemap.xml"
+  customHeadHtml: "<link rel=\"canonical\" href=\"https://tw641.github.io/status/\">"
+  robotsText: "User-agent: *\nAllow: /"
   metaTags:
     - name: "robots"
       content: "index, follow"
