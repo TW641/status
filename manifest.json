@@ -1,19 +1,14 @@
 {
   "background_color": "#ffffff",
   "theme_color": "#333333",
-  "name": "Upptime",
-  "short_name": "Upptime",
+  "name": "TW641 Status",
+  "short_name": "TW641 Status",
   "display": "minimal-ui",
-  "start_url": "/",
+  "start_url": "/status/",
   "icons": [
     {
-      "src": "logo-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "logo-512.png",
-      "sizes": "512x512",
+      "src": "/TW641.png",
+      "sizes": "any",
       "type": "image/png"
     }
   ]
