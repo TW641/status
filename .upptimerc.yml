@@ -8,250 +8,250 @@ sites:
   # ==========================================
   - name: TW641 GitHub Pages 官方主站 - 首頁
     url: https://tw641.github.io/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitHub Pages 官方主站 - daves-guitar-2026
     url: https://tw641.github.io/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitHub Pages 官方主站 - Padavan-CAKE
     url: https://tw641.github.io/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitHub Pages 官方主站 - sch_cake
     url: https://tw641.github.io/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitHub Pages 官方主站 - padavan-builder-workflow
     url: https://tw641.github.io/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitHub Pages 官方主站 - padavan-ng
     url: https://tw641.github.io/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitHub Pages 官方主站 - padavan-4.4
     url: https://tw641.github.io/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 2. Cloudflare Pages - TW641 備援網站
   # ==========================================
   - name: TW641 Cloudflare Pages 備援網站 - 首頁
     url: https://tw641.pages.dev/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Pages 備援網站 - daves-guitar-2026
     url: https://tw641.pages.dev/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Pages 備援網站 - Padavan-CAKE
     url: https://tw641.pages.dev/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Pages 備援網站 - sch_cake
     url: https://tw641.pages.dev/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Pages 備援網站 - padavan-builder-workflow
     url: https://tw641.pages.dev/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Pages 備援網站 - padavan-ng
     url: https://tw641.pages.dev/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Pages 備援網站 - padavan-4.4
     url: https://tw641.pages.dev/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 3. Cloudflare Workers - TW641 備援網站
   # ==========================================
   - name: TW641 Cloudflare Workers 備援網站 - 首頁
     url: https://www.tw641.workers.dev/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Workers 備援網站 - daves-guitar-2026
     url: https://www.tw641.workers.dev/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Workers 備援網站 - Padavan-CAKE
     url: https://www.tw641.workers.dev/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Workers 備援網站 - sch_cake
     url: https://www.tw641.workers.dev/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Workers 備援網站 - padavan-builder-workflow
     url: https://www.tw641.workers.dev/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Workers 備援網站 - padavan-ng
     url: https://www.tw641.workers.dev/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Cloudflare Workers 備援網站 - padavan-4.4
     url: https://www.tw641.workers.dev/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 4. Firebase Hosting - TW641 備援網站
   # ==========================================
   - name: TW641 Firebase Hosting 備援網站 - 首頁
     url: https://tw641t.web.app/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Firebase Hosting 備援網站 - daves-guitar-2026
     url: https://tw641t.web.app/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Firebase Hosting 備援網站 - Padavan-CAKE
     url: https://tw641t.web.app/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Firebase Hosting 備援網站 - sch_cake
     url: https://tw641t.web.app/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Firebase Hosting 備援網站 - padavan-builder-workflow
     url: https://tw641t.web.app/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Firebase Hosting 備援網站 - padavan-ng
     url: https://tw641t.web.app/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Firebase Hosting 備援網站 - padavan-4.4
     url: https://tw641t.web.app/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 5. FirebaseApp.com - TW641 備用網域
   # ==========================================
   - name: TW641 FirebaseApp.com 備用網域 - 首頁
     url: https://tw641t.firebaseapp.com/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 FirebaseApp.com 備用網域 - daves-guitar-2026
     url: https://tw641t.firebaseapp.com/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 FirebaseApp.com 備用網域 - Padavan-CAKE
     url: https://tw641t.firebaseapp.com/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 FirebaseApp.com 備用網域 - sch_cake
     url: https://tw641t.firebaseapp.com/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 FirebaseApp.com 備用網域 - padavan-builder-workflow
     url: https://tw641t.firebaseapp.com/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 FirebaseApp.com 備用網域 - padavan-ng
     url: https://tw641t.firebaseapp.com/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 FirebaseApp.com 備用網域 - padavan-4.4
     url: https://tw641t.firebaseapp.com/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 6. GitLab Pages - TW641 備援網站
   # ==========================================
   - name: TW641 GitLab Pages 備援網站 - 首頁
     url: https://tw641.gitlab.io/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitLab Pages 備援網站 - daves-guitar-2026
     url: https://tw641.gitlab.io/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitLab Pages 備援網站 - Padavan-CAKE
     url: https://tw641.gitlab.io/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitLab Pages 備援網站 - sch_cake
     url: https://tw641.gitlab.io/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitLab Pages 備援網站 - padavan-builder-workflow
     url: https://tw641.gitlab.io/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitLab Pages 備援網站 - padavan-ng
     url: https://tw641.gitlab.io/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 GitLab Pages 備援網站 - padavan-4.4
     url: https://tw641.gitlab.io/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 7. Netlify - TW641 備援網站
   # ==========================================
   - name: TW641 Netlify 備援網站 - 首頁
     url: https://tw641.netlify.app/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Netlify 備援網站 - daves-guitar-2026
     url: https://tw641.netlify.app/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Netlify 備援網站 - Padavan-CAKE
     url: https://tw641.netlify.app/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Netlify 備援網站 - sch_cake
     url: https://tw641.netlify.app/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Netlify 備援網站 - padavan-builder-workflow
     url: https://tw641.netlify.app/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Netlify 備援網站 - padavan-ng
     url: https://tw641.netlify.app/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Netlify 備援網站 - padavan-4.4
     url: https://tw641.netlify.app/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 8. Vercel - TW641 備援網站
   # ==========================================
   - name: TW641 Vercel 備援網站 - 首頁
     url: https://tw641.vercel.app/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Vercel 備援網站 - daves-guitar-2026
     url: https://tw641.vercel.app/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Vercel 備援網站 - Padavan-CAKE
     url: https://tw641.vercel.app/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Vercel 備援網站 - sch_cake
     url: https://tw641.vercel.app/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Vercel 備援網站 - padavan-builder-workflow
     url: https://tw641.vercel.app/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Vercel 備援網站 - padavan-ng
     url: https://tw641.vercel.app/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Vercel 備援網站 - padavan-4.4
     url: https://tw641.vercel.app/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 9. Render - TW641 備援網站
   # ==========================================
   - name: TW641 Render 備援網站 - 首頁
     url: https://tw641.onrender.com/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Render 備援網站 - daves-guitar-2026
     url: https://tw641.onrender.com/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Render 備援網站 - Padavan-CAKE
     url: https://tw641.onrender.com/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Render 備援網站 - sch_cake
     url: https://tw641.onrender.com/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Render 備援網站 - padavan-builder-workflow
     url: https://tw641.onrender.com/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Render 備援網站 - padavan-ng
     url: https://tw641.onrender.com/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Render 備援網站 - padavan-4.4
     url: https://tw641.onrender.com/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
   # ==========================================
   # 10. Surge - TW641 備援網站
   # ==========================================
   - name: TW641 Surge 備援網站 - 首頁
     url: https://tw641.surge.sh/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Surge 備援網站 - daves-guitar-2026
     url: https://tw641.surge.sh/daves-guitar-2026/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Surge 備援網站 - Padavan-CAKE
     url: https://tw641.surge.sh/Padavan-CAKE/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Surge 備援網站 - sch_cake
     url: https://tw641.surge.sh/sch_cake/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Surge 備援網站 - padavan-builder-workflow
     url: https://tw641.surge.sh/padavan-builder-workflow/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Surge 備援網站 - padavan-ng
     url: https://tw641.surge.sh/padavan-ng/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Surge 備援網站 - padavan-4.4
     url: https://tw641.surge.sh/padavan-4.4/
-    icon: /TW641.png
+    icon: https://tw641.pages.dev/TW641.png
 
 status-website:
   userContentBaseUrl: https://rawcdn.githack.com
