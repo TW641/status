@@ -187,7 +187,7 @@ status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
-  userContentBaseUrl: https://cdn.jsdelivr.net/gh
+  userContentBaseUrl: https://raw.githack.com
   customHeadHtml: |
     <link rel="canonical" href="https://tw641.github.io/status/">
     <meta name="google-site-verification" content="-vHIVPvpGauTz39uKyANi2BPSfJwrsrxGVMagKliEgE">
