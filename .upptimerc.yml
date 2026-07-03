@@ -4,19 +4,6 @@ repo: status # The name of this repository
 
 sites:
   # ==========================================
-  # 0. TW641 Status Pages
-  # ==========================================
-  - name: TW641 Status - Cloudflare Pages
-    url: https://tw641status.pages.dev/
-    icon: https://tw641.pages.dev/TW641.png
-  - name: TW641 Uptimer - Cloudflare Pages
-    url: https://tw641uptimer.pages.dev/
-    icon: https://tw641.pages.dev/TW641.png
-  - name: TW641 Status - GitHub Pages
-    url: https://tw641.github.io/status/
-    icon: https://tw641.pages.dev/TW641.png
-
-  # ==========================================
   # 1. GitHub Pages - TW641 官方主站
   # ==========================================
   - name: TW641 GitHub Pages 官方主站 - 首頁
@@ -264,6 +251,19 @@ sites:
     icon: https://tw641.pages.dev/TW641.png
   - name: TW641 Surge 備援網站 - padavan-4.4
     url: https://tw641.surge.sh/padavan-4.4/
+    icon: https://tw641.pages.dev/TW641.png
+
+  # ==========================================
+  # 11. TW641 Status Pages
+  # ==========================================
+  - name: TW641 Status - Cloudflare Pages
+    url: https://tw641status.pages.dev/
+    icon: https://tw641.pages.dev/TW641.png
+  - name: TW641 Uptimer - Cloudflare Pages
+    url: https://tw641uptimer.pages.dev/
+    icon: https://tw641.pages.dev/TW641.png
+  - name: TW641 Status - GitHub Pages
+    url: https://tw641.github.io/status/
     icon: https://tw641.pages.dev/TW641.png
 
 status-website:
