@@ -40,3 +40,4 @@ jobs:
           command: "graphs"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
