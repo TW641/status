@@ -8,10 +8,10 @@ sites:
   # ==========================================
   - name: TW641 Status - Cloudflare Pages
     url: https://tw641status.pages.dev/
-    icon: https://tw641.pages.dev/TW641.png
+    icon: https://tw641status.pages.dev/favicon.svg
   - name: TW641 Uptimer - Cloudflare Pages
     url: https://tw641uptimer.pages.dev/
-    icon: https://tw641.pages.dev/TW641.png
+    icon: https://tw641uptimer.pages.dev/favicon.svg
   - name: TW641 Status - GitHub Pages
     url: https://tw641.github.io/status/
     icon: https://tw641.pages.dev/TW641.png
