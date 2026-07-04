@@ -6,7 +6,7 @@
 # Your changes will be overwritten when the Upptime template updates (by default, weekly)
 # Instead, change .upptimerc.yml configuration and the workflows will be generated accordingly.
 #
-# 🔼 Upptime @v1.43.7
+# 🔼 Upptime @v1.43.8
 # GitHub-powered open-source uptime monitor and status page by Anand Chowdhary
 
 # * Source: https://github.com/upptime/upptime
@@ -17,7 +17,7 @@
 name: Update Template CI
 on:
   schedule:
-    - cron: "0 0 31 12 *"
+    - cron: "0 0 * * *"
   repository_dispatch:
     types: [update_template]
   workflow_dispatch:
