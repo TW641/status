@@ -331,7 +331,7 @@ workflowSchedule:
   responseTime: "0 23 * * *"
   staticSite: "0 1 * * *"
   summary: "0 0 * * *"
-  updateTemplate: "0 0 31 12 *"
+  updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
   uptime: "*/5 * * * *"
 
