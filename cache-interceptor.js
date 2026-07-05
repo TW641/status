@@ -12,7 +12,7 @@
   const fetchTargets = new Set();
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/history/summary.json');
 
-  // 1. 攔截原生 fetch 函式 (升級：同時支援字串與 Request 物件攔截)
+  // 1. 攔截原生 fetch 函式 (維持原樣，完全不動)
   const origFetch = window.fetch;
   window.fetch = async function(...args) {
     let reqUrl = '';
@@ -82,12 +82,26 @@
 
   // 2. 攔截並修正圖片網址 (處理動態生成的圖表，避免破圖)
   new MutationObserver(() => {
+    // 原來的 img 邏輯 (不動)
     document.querySelectorAll('img').forEach(img => {
       if (img.src.includes('/status/master/')) {
         img.src = fix(img.src);
       }
     });
-  }).observe(document.body, { childList: true, subtree: true });
+
+    // 🔥 新增邏輯：對症下藥，將 fix 函數也套用在包含 /status/master/ 的 style 背景圖上
+    document.querySelectorAll('[style]').forEach(el => {
+      const styleAttr = el.getAttribute('style');
+      if (styleAttr && styleAttr.includes('/status/master/')) {
+        el.setAttribute('style', fix(styleAttr));
+      }
+    });
+  }).observe(document.body, { 
+    childList: true, 
+    subtree: true, 
+    attributes: true,         // 🔥 必須監聽屬性，因為 Svelte 切換按鈕是修改 style 屬性
+    attributeFilter: ['style'] 
+  });
 
   // 3. 監聽導覽列 (Navbar) 按鈕，執行快取清除流程
   document.addEventListener('click', async (e) => {
@@ -102,11 +116,22 @@
 
       const currentUrls = new Set(fetchTargets);
       
-      // 瞬間掃描當下網頁內所有資源
+      // 瞬間掃描當下網頁內所有資源 (不動)
       document.querySelectorAll('img[src], script[src], link[href]').forEach(el => {
         const url = el.src || el.href;
         if (url && url.includes('cdn.jsdelivr.net')) {
           currentUrls.add(url.split('?')[0]);
+        }
+      });
+
+      // 🔥 新增邏輯：把 style 裡的背景圖 URL 也挖出來加入 purge 清單
+      document.querySelectorAll('[style]').forEach(el => {
+        const styleAttr = el.getAttribute('style');
+        if (styleAttr && styleAttr.includes('cdn.jsdelivr.net')) {
+          const match = styleAttr.match(/url\(['"]?(.*?)['"]?\)/);
+          if (match && match[1]) {
+            currentUrls.add(match[1].split('?')[0]);
+          }
         }
       });
 
