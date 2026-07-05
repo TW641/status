@@ -267,7 +267,10 @@ sites:
     icon: https://tw641.pages.dev/TW641.png
 
 status-website:
-  userContentBaseUrl: https://raw.githack.com
+  userContentBaseUrl: https://cdn.jsdelivr.net/gh
+  scripts:
+    - src: https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js
+      async: false
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
@@ -325,6 +328,8 @@ status-website:
       href: /status
     - title: GitHub
       href: https://github.com/$OWNER
+    - title: "♻️ 取得最新資料"
+      href: "#purge-cache"
 
 workflowSchedule:
   graphs: "0 0 * * *"
