@@ -1,4 +1,8 @@
 (function() {
+  // 🛡️ 終極防護：防止腳本被 Svelte 或瀏覽器重複執行，造成事件綁定兩次（解決跑兩輪、跳兩次 Alert 的真兇）
+  if (window.__jsDelivrScriptLoaded) return;
+  window.__jsDelivrScriptLoaded = true;
+
   console.log("🚀 jsDelivr 轉換、API 防護與精準清除快取腳本已啟動！");
 
   // 取得網址列的快取破壞者 (Cache Buster) 參數
@@ -11,6 +15,8 @@
   // 記錄需要清除快取的 CDN 資源網址
   const fetchTargets = new Set();
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/history/summary.json');
+  // 🔥 依照您的要求，將腳本本身也明確加入必須 Purge 的清單
+  fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js');
 
   // 1. 攔截原生 fetch 函式 (維持不動)
   const origFetch = window.fetch;
@@ -132,20 +138,19 @@
         if (url && url.includes('cdn.jsdelivr.net')) currentUrls.add(url.split('?')[0]);
       });
 
-      // 收集 style 裡的背景圖 (再次確保目前畫面上的資源都被 Purge)
+      // 收集 style 裡的背景圖
       document.querySelectorAll('[style]').forEach(el => {
         const styleAttr = el.getAttribute('style');
         if (styleAttr && styleAttr.includes('cdn.jsdelivr.net')) {
           const match = styleAttr.match(/url\(['"]?(https:\/\/cdn\.jsdelivr\.net[^'"]+)['"]?\)/);
-          // 使用 split('?')[0] 確保 Purge 請求是針對「乾淨的網址」，而不是帶有時間戳的網址
           if (match && match[1]) currentUrls.add(match[1].split('?')[0]);
         }
       });
 
-      // 準備併發發送清除快取的請求
+      // 🔥 改為 'cors' 模式，讓瀏覽器允許讀取 json 回應內容，徹底解決 Network 標籤內顯示空白的問題
       const purgeRequests = Array.from(currentUrls).map(url => {
         const purgeUrl = url.replace('https://cdn.jsdelivr.net/', 'https://purge.jsdelivr.net/');
-        return fetch(purgeUrl, { mode: 'no-cors' }).catch(err => {
+        return fetch(purgeUrl, { mode: 'cors' }).catch(err => {
           console.error('❌ 清除快取請求失敗:', purgeUrl, err);
         }); 
       });
@@ -157,7 +162,7 @@
       const reloadUrl = new URL(window.location.href);
       reloadUrl.hash = ''; // 清除錨點 (hash)
       
-      // 單獨針對網頁路徑處理：如果結尾沒有斜線，且不是具體的檔案 (例如沒有包含 .html)，就補上斜線避免 GitHub Pages 301 轉址
+      // 單獨針對網頁路徑處理
       const pathSegments = reloadUrl.pathname.split('/');
       const lastSegment = pathSegments[pathSegments.length - 1];
       if (!reloadUrl.pathname.endsWith('/') && !lastSegment.includes('.')) {
