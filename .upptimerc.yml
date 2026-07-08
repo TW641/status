@@ -311,6 +311,8 @@ status-website:
   metaTags:
     - name: "robots"
       content: "index, follow"
+    - name: "description"
+      content: "TW641 即時服務監測系統 (Uptime Monitor)。即時追蹤 TW641 官方主站與 10 種異質多雲備援架構（Cloudflare, Vercel, Firebase 等），共 70 個節點的全球可用性與連線狀態。"
   favicon: /TW641.png
   baseUrl: /status
   logoUrl: /TW641.png
