@@ -295,6 +295,7 @@ status-website:
     基於 Cloudflare Workers + Cloudflare Pages + Cloudflare D1 的 ZeroOps 現代化架構，實現「每分鐘準時觸發」的秒級探測！
     
     雙主力節點提供深度互動式資料分析：
+
     <ul>
     <li><strong>高頻率即時指標</strong>：狀態頁面直觀顯示「最近 60 次檢查」的可用性，以及該區間內「最快」、「平均」與「最慢」的伺服器回應時間。</li>
     <li><strong>24 小時延遲分析</strong>：點選「最近 60 次檢查」條狀圖，即可展開最近一日的「平均延遲」、「P95 延遲」與「24 小時延遲狀態折線圖」。您亦可點選清單中的特定服務，獨立檢視該服務近 24 小時的動態。</li>
@@ -309,24 +310,28 @@ status-website:
     為推動開源監測架構的發展並加速搜尋引擎收錄，以下為本站維護者於核心專案提交之優化成果（點選超連結前往）：
     
     <strong>Upptime 核心組件優化成果：</strong>
+
     <ul>
-    <li>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li><br>
-    <li>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li><br>
+    <li style="margin-bottom: 12px;">🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li>
+    <li style="margin-bottom: 12px;">🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
     <li>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">https://github.com/upptime/upptime/pull/1169</a></li>
     </ul>
 
     <strong>Uptimer 國際化與介面體驗優化成果：</strong>
+
     <ul>
-    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li><br>
-    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li><br>
+    <li style="margin-bottom: 12px;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
+    <li style="margin-bottom: 12px;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
     <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
     </ul>
 
     ---
 
     📊 <strong>系統架構明細與監測服務清單</strong>
+
     <div style="margin-top: 15px;">
     本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：
+
     <ul>
     <li>1. <a href="https://tw641.github.io/" target="_blank">GitHub Pages - TW641 官方主站與子專案</a>（7 個）</li>
     <li>2. <a href="https://tw641.pages.dev/" target="_blank">Cloudflare Pages - 備援網站</a>（7 個）</li>
@@ -341,6 +346,7 @@ status-website:
     </ul>
 
     即時監測服務包括：
+
     <ul>
     <li>🔗 <a href="https://tw641.github.io/" target="_blank">TW641 GitHub Pages 官方主站 - 首頁</a></li>
     <li>🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">TW641 GitHub Pages 官方主站 - daves-guitar-2026</a></li>
