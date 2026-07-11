@@ -1,18 +1,18 @@
 (function() {
-  // 🛡️ 單例模式防禦 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定，徹底杜絕記憶體洩漏 (Memory Leak)
+  // 🛡️ 單例模式防護 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定，徹底杜絕記憶體洩漏 (Memory Leak)
   if (window.__jsDelivrScriptLoaded) return;
   window.__jsDelivrScriptLoaded = true;
 
   console.log("🚀 jsDelivr 路由轉換、API 速率防護、A11y 語意重構與 CDN 快取強制清除腳本已啟動！");
 
-  // 擷取網址列的快取破壞參數 (Cache Buster)
+  // 擷取網址列的快取無效化參數 (Cache Buster)
   const urlParams = new URLSearchParams(window.location.search);
   const cacheBuster = urlParams.get('t');
 
   // 核心邏輯：將舊版 /status/master/ 替換為支援 jsDelivr CDN 的 /status@master/ 格式
   const fix = url => typeof url === 'string' ? url.replace('/status/master/', '/status@master/') : url;
 
-  // 建立 Set 集合，用於記錄需執行 CDN 快取清除 (Purge) 的資源網址，利用 Set 特性自動排除重複網址
+  // 建立 Set 集合，用於記錄需執行 CDN 快取清洗 (Purge) 的資源網址，利用 Set 特性自動排除重複網址
   const fetchTargets = new Set();
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/history/summary.json');
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js');
@@ -55,10 +55,9 @@
       }
     }
 
-    // 重構攔截後的請求參數
+    // 重構攔截後的請求參數 (使用舊版穩定寫法，確保 100% 不引發相容性問題)
     if (isRequestObject) {
-      // 使用 .clone() 確保不干擾原始 Request 物件的 Body 讀取狀態，再套用新網址
-      args[0] = new Request(reqUrl, args[0].clone());
+      args[0] = new Request(reqUrl, args[0]);
     } else {
       args[0] = reqUrl;
     }
@@ -99,7 +98,7 @@
     });
     
     if (hasReplaced) {
-      console.debug("🛡️ 已將階層錯誤的 h4 動態重構為 h3，無障礙語意 (A11y) 修復完成。");
+      console.debug("🛡️ 已將未依序顯示之 h4 動態重構為 h3，無障礙語意 (A11y) 階層修復完成。");
     }
   };
 
@@ -183,7 +182,7 @@
         }
       });
 
-      // 以並行 (Concurrent) 方式發送 jsDelivr Purge API 請求
+      // 以併發 (Concurrent) 方式發送 jsDelivr Purge API 請求
       const purgeRequests = Array.from(currentUrls).map(url => {
         const purgeUrl = url.replace('https://cdn.jsdelivr.net/', 'https://purge.jsdelivr.net/');
         return fetch(purgeUrl, { mode: 'cors' }).catch(err => {
@@ -195,7 +194,7 @@
 
       alert("✅ CDN 快取已強制清除！即將重新載入頁面以取得最新資料。");
       
-      // 執行強制重新載入 (Hard Reload) 並注入最新的快取破壞參數
+      // 執行強制重新載入 (Hard Reload) 並注入最新的快取無效化參數
       const reloadUrl = new URL(window.location.href);
       reloadUrl.hash = ''; 
       
