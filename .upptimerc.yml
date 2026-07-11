@@ -288,13 +288,13 @@ status-website:
   name: TW641 Status
   introTitle: "TW641 Real-time Uptime Monitor | 70 Nodes Global Availability Status"
   introMessage: |
-    <p><strong>TW641 多層次高可用性狀態中心</strong><br>
-    為克服單一服務的盲區，本系統採用「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構：</p>
+    <strong>TW641 多層次監測與高可用性狀態中心</strong><br>
+    為克服單一監測服務的盲區，本系統採用「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構：
 
-    <p>🚀 <strong>即時精準狀態頁：高頻率邊緣運算 (絕對主力)</strong><br>
-    基於 Cloudflare Workers + Cloudflare Pages + Cloudflare D1 的 ZeroOps 現代化架構，實現「每分鐘準時觸發」的秒級探測！</p>
+    🚀 <strong>即時精準狀態頁：高頻率邊緣運算 (絕對主力)</strong><br>
+    基於 Cloudflare Workers + Cloudflare Pages + Cloudflare D1 的 ZeroOps 現代化架構，實現「每分鐘準時觸發」的秒級探測！
     
-    <p>雙主力節點提供深度互動式資料分析：</p>
+    雙主力節點提供深度互動式資料分析：
     <ul>
     <li><strong>高頻率即時指標</strong>：狀態頁面直觀顯示「最近 60 次檢查」的可用性，以及該區間內「最快」、「平均」與「最慢」的伺服器回應時間。</li>
     <li><strong>24 小時延遲分析</strong>：點選「最近 60 次檢查」條狀圖，即可展開最近一日的「平均延遲」、「P95 延遲」與「24 小時延遲狀態折線圖」。您亦可點選清單中的特定服務，獨立檢視該服務近 24 小時的動態。</li>
@@ -303,30 +303,30 @@ status-website:
     <li>👑 TW641 Uptimer 主力頁： <a href="https://tw641uptimer.pages.dev/" target="_blank">https://tw641uptimer.pages.dev/</a></li>
     </ul>
 
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #e1e4e8;">
+    ---
 
-    <p>🛠️ <strong>TW641 開源社群貢獻與 Pull Requests 技術索引</strong><br>
-    為推動開源監測架構的發展並加速搜尋引擎收錄，以下為本站維護者於核心專案提交之優化成果（點選超連結前往）：</p>
+    🛠️ <strong>TW641 開源社群貢獻與 Pull Requests 技術索引</strong><br>
+    為推動開源監測架構的發展並加速搜尋引擎收錄，以下為本站維護者於核心專案提交之優化成果（點選超連結前往）：
     
-    <p><strong>Upptime 核心組件優化成果：</strong></p>
+    <strong>Upptime 核心組件優化成果：</strong>
     <ul>
-    <li>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li>
-    <li>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
+    <li>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li><br>
+    <li>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li><br>
     <li>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">https://github.com/upptime/upptime/pull/1169</a></li>
     </ul>
 
-    <p><strong>Uptimer 國際化與介面體驗優化成果：</strong></p>
+    <strong>Uptimer 國際化與介面體驗優化成果：</strong>
     <ul>
-    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
-    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
+    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li><br>
+    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li><br>
     <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
     </ul>
 
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #e1e4e8;">
+    ---
 
-    <p>📊 <strong>系統架構明細與監測清單</strong></p>
+    📊 <strong>系統架構明細與監測服務清單</strong>
     <div style="margin-top: 15px;">
-    <p>本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：</p>
+    本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：
     <ul>
     <li>1. <a href="https://tw641.github.io/" target="_blank">GitHub Pages - TW641 官方主站與子專案</a>（7 個）</li>
     <li>2. <a href="https://tw641.pages.dev/" target="_blank">Cloudflare Pages - 備援網站</a>（7 個）</li>
@@ -340,7 +340,7 @@ status-website:
     <li>10. <a href="https://tw641.surge.sh/" target="_blank">Surge - 備援網站</a>（7 個）</li>
     </ul>
 
-    <p>即時監測服務包括：</p>
+    即時監測服務包括：
     <ul>
     <li>🔗 <a href="https://tw641.github.io/" target="_blank">TW641 GitHub Pages 官方主站 - 首頁</a></li>
     <li>🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">TW641 GitHub Pages 官方主站 - daves-guitar-2026</a></li>
@@ -351,18 +351,18 @@ status-website:
     <li>🔗 <a href="https://tw641.github.io/padavan-4.4/" target="_blank">TW641 GitHub Pages 官方主站 - padavan-4.4</a></li>
     </ul>
 
-    <p>以及 <a href="https://tw641.pages.dev/" target="_blank">Cloudflare Pages</a>、<a href="https://www.tw641.workers.dev/" target="_blank">Cloudflare Workers</a>、<a href="https://tw641t.web.app/" target="_blank">Firebase Hosting</a>、<a href="https://tw641t.firebaseapp.com/" target="_blank">FirebaseApp.com</a>、<a href="https://tw641.gitlab.io/" target="_blank">GitLab Pages</a>、<a href="https://tw641.netlify.app/" target="_blank">Netlify</a>、<a href="https://tw641.vercel.app/" target="_blank">Vercel</a>、<a href="https://tw641.onrender.com/" target="_blank">Render</a>、<a href="https://tw641.surge.sh/" target="_blank">Surge</a> 等多個備援平台的監測。</p>
+    以及 <a href="https://tw641.pages.dev/" target="_blank">Cloudflare Pages</a>、<a href="https://www.tw641.workers.dev/" target="_blank">Cloudflare Workers</a>、<a href="https://tw641t.web.app/" target="_blank">Firebase Hosting</a>、<a href="https://tw641t.firebaseapp.com/" target="_blank">FirebaseApp.com</a>、<a href="https://tw641.gitlab.io/" target="_blank">GitLab Pages</a>、<a href="https://tw641.netlify.app/" target="_blank">Netlify</a>、<a href="https://tw641.vercel.app/" target="_blank">Vercel</a>、<a href="https://tw641.onrender.com/" target="_blank">Render</a>、<a href="https://tw641.surge.sh/" target="_blank">Surge</a> 等多個備援平台的監測。
     </div>
 
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #e1e4e8;">
+    ---
 
-    <p>🐢 <strong>長期趨勢觀測頁 (Upptime)：本站目前架構 (僅供備用)</strong><br>
-    本頁面基於傳統 GitHub Actions 架構。由於排程佇列嚴重延遲（設定 5 分鐘，實際單日可能僅執行 10 餘次），屬於完全依賴單一生態的「不定時監測架構」。<strong>本站目前僅適合作為「長時間的觀測參考」</strong>。</p>
+    🐢 <strong>長期趨勢觀測頁 (Upptime)：本站目前架構 (僅供備用)</strong><br>
+    本頁面基於傳統 GitHub Actions 架構。由於排程佇列嚴重延遲（設定 5 分鐘，實際單日可能僅執行 10 餘次），屬於完全依賴單一生態的「不定時監測架構」。<strong>本站目前僅適合作為「長時間的觀測參考」</strong>。
 
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #e1e4e8;">
+    ---
 
-    <p>🌐 <strong>雲端平台跨站路由爬蟲預覽區</strong><br>
-    引導搜尋引擎收錄子節點並確認全網交叉可用性（為確保瀏覽器效能，<strong>請點選特定服務獨立展開載入預覽畫面</strong>）：</p>
+    🌐 <strong>雲端平台跨站路由爬蟲預覽區</strong><br>
+    引導搜尋引擎收錄子節點並確認全網交叉可用性（為確保瀏覽器效能，<strong>請點選特定服務獨立展開載入預覽畫面</strong>）：
 
     <details style="margin-bottom: 10px;">
     <summary style="cursor: pointer;">👑 <b>1. TW641 Status 主力頁</b> (點這裡展開預覽) | 🔗 <a href="https://tw641status.pages.dev/" target="_blank">點這裡直接前往網站：https://tw641status.pages.dev/</a></summary>
