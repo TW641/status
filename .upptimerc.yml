@@ -276,40 +276,6 @@ status-website:
     <meta name="google-site-verification" content="-vHIVPvpGauTz39uKyANi2BPSfJwrsrxGVMagKliEgE">
     <meta name="google-site-verification" content="OV7xROgDy7S6bx5Mrsf5hefCfoKkRYgE0F9raeoZ8qc">
 
-  customBodyHtml: |
-    <div style="margin-top: 30px; padding: 15px; border: 1px solid #e1e4e8; border-radius: 6px; background-color: #f6f8fa;">
-    <details>
-    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1em;">📊 TW641 Status Page - 異質多雲即時服務監測系統 (系統架構明細)</summary>
-    <div style="margin-top: 15px; line-height: 1.6;">
-    <p>本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：</p>
-    <ul>
-    <li>1. GitHub Pages - TW641 官方主站與子專案（7 個）</li>
-    <li>2. Cloudflare Pages - 備援網站（7 個）</li>
-    <li>3. Cloudflare Workers - 備援網站（7 個）</li>
-    <li>4. Firebase Hosting - 備援網站（7 個）</li>
-    <li>5. FirebaseApp.com - 備用網域（7 個）</li>
-    <li>6. GitLab Pages - 備援網站（7 個）</li>
-    <li>7. Netlify - 備援網站（7 個）</li>
-    <li>8. Vercel - 備援網站（7 個）</li>
-    <li>9. Render - 備援網站（7 個）</li>
-    <li>10. Surge - 備援網站（7 個）</li>
-    </ul>
-    <p>即時監測服務包括：</p>
-    <ul>
-    <li>TW641 GitHub Pages 官方主站 - 首頁</li>
-    <li>TW641 GitHub Pages 官方主站 - daves-guitar-2026</li>
-    <li>TW641 GitHub Pages 官方主站 - Padavan-CAKE</li>
-    <li>TW641 GitHub Pages 官方主站 - sch_cake</li>
-    <li>TW641 GitHub Pages 官方主站 - padavan-builder-workflow</li>
-    <li>TW641 GitHub Pages 官方主站 - padavan-ng</li>
-    <li>TW641 GitHub Pages 官方主站 - padavan-4.4</li>
-    </ul>
-    <p>以及 Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge 等多個備援平台的監測。</p>
-    <p><strong>架構聲明：</strong><strong>即時高可用性數據一律依賴 Uptimer 邊緣運算架構作為絕對主力。</strong>備用歷史數據則採用開源方案 Upptime（無需額外伺服器），本質上僅作為備用架構的監測器。</p>
-    </div>
-    </details>
-    </div>
-  
   robotsText: "User-agent: *\nAllow: /"
   metaTags:
     - name: "robots"
@@ -330,8 +296,8 @@ status-website:
     * **高頻率即時指標**：狀態頁面直觀顯示「最近 60 次檢查」的可用性，以及該區間內「最快」、「平均」與「最慢」的伺服器回應時間。
     * **24 小時延遲分析**：點選「最近 60 次檢查」條狀圖，即可展開最近一日的「平均延遲」、「P95 延遲」與「24 小時延遲狀態折線圖」。您亦可點選清單中的特定服務，獨立檢視該服務近 24 小時的動態。
     * **60 天歷史中斷明細**：點選上方「近 60 天可用性」的單日條狀圖，將彈出當日「服務中斷明細」與總中斷時間（若系統穩定，則顯示如：`2026/7/6 總計: 0s 當天沒有紀錄到中斷。`）。
-    * 👑 TW641 Uptimer 主力頁： [https://tw641uptimer.pages.dev/](https://tw641uptimer.pages.dev/)
     * 👑 TW641 Status 主力頁： [https://tw641status.pages.dev/](https://tw641status.pages.dev/)
+    * 👑 TW641 Uptimer 主力頁： [https://tw641uptimer.pages.dev/](https://tw641uptimer.pages.dev/)
 
     🐢 **長期趨勢觀測頁 (Upptime)：本站目前架構 (僅供備用)**
     本頁面基於傳統 GitHub Actions 架構。由於排程佇列嚴重延遲（設定 5 分鐘，實際單日可能僅執行 10 餘次），屬於完全依賴單一生態的「不定時監測架構」。**本站目前僅適合作為「長時間的觀測參考」**。
@@ -340,13 +306,13 @@ status-website:
     涵蓋以下官方主站與備援網站（點選展開可直接載入跨站路由實體，引導爬蟲收錄並確認全網交叉可用性）：
 
     <details>
-    <summary>👑 1. TW641 Uptimer 主力監測頁 (點選預覽)</summary>
-    <div style="margin-top: 10px;">🔗 <a href="https://tw641uptimer.pages.dev/" target="_blank">https://tw641uptimer.pages.dev/</a><br><iframe src="https://tw641uptimer.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Uptimer Monitor"></iframe></div>
+    <summary>👑 1. TW641 Status 主力監測頁 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641status.pages.dev/" target="_blank">https://tw641status.pages.dev/</a><br><iframe src="https://tw641status.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Status Monitor"></iframe></div>
     </details>
 
     <details>
-    <summary>👑 2. TW641 Status 主力監測頁 (點選預覽)</summary>
-    <div style="margin-top: 10px;">🔗 <a href="https://tw641status.pages.dev/" target="_blank">https://tw641status.pages.dev/</a><br><iframe src="https://tw641status.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Status Monitor"></iframe></div>
+    <summary>👑 2. TW641 Uptimer 主力監測頁 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641uptimer.pages.dev/" target="_blank">https://tw641uptimer.pages.dev/</a><br><iframe src="https://tw641uptimer.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Uptimer Monitor"></iframe></div>
     </details>
 
     <details>
@@ -397,6 +363,38 @@ status-website:
     <details>
     <summary>🌐 12. Surge 備援站 (點選預覽)</summary>
     <div style="margin-top: 10px;">🔗 <a href="https://tw641.surge.sh/" target="_blank">https://tw641.surge.sh/</a><br><iframe src="https://tw641.surge.sh/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Surge"></iframe></div>
+    </details>
+
+    ---
+
+    <details>
+    <summary>📊 <b>系統架構明細與監測清單 (點選展開)</b></summary>
+
+    本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：
+
+    1. GitHub Pages - TW641 官方主站與子專案（7 個）
+    2. Cloudflare Pages - 備援網站（7 個）
+    3. Cloudflare Workers - 備援網站（7 個）
+    4. Firebase Hosting - 備援網站（7 個）
+    5. FirebaseApp.com - 備用網域（7 個）
+    6. GitLab Pages - 備援網站（7 個）
+    7. Netlify - 備援網站（7 個）
+    8. Vercel - 備援網站（7 個）
+    9. Render - 備援網站（7 個）
+    10. Surge - 備援網站（7 個）
+
+    即時監測服務包括：
+    * TW641 GitHub Pages 官方主站 - 首頁
+    * TW641 GitHub Pages 官方主站 - daves-guitar-2026
+    * TW641 GitHub Pages 官方主站 - Padavan-CAKE
+    * TW641 GitHub Pages 官方主站 - sch_cake
+    * TW641 GitHub Pages 官方主站 - padavan-builder-workflow
+    * TW641 GitHub Pages 官方主站 - padavan-ng
+    * TW641 GitHub Pages 官方主站 - padavan-4.4
+
+    以及 Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge 等多個備援平台的監測。
+
+    **架構聲明：即時高可用性數據一律依賴 Uptimer 邊緣運算架構作為絕對主力。** 備用歷史數據則採用開源方案 Upptime（無需額外伺服器），本質上僅作為備用架構的監測器。
     </details>
 
   navbar:
