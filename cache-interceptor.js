@@ -1,5 +1,5 @@
 (function() {
-  // 🛡️ 單例模式防禦 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定，徹底杜絕記憶體洩漏 (Memory Leak)
+  // 🛡️ 單例模式防護 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定，徹底杜絕記憶體洩漏 (Memory Leak)
   if (window.__jsDelivrScriptLoaded) return;
   window.__jsDelivrScriptLoaded = true;
 
@@ -185,7 +185,7 @@
         }
       });
 
-      // 以併發 (Concurrent) 方式發送 jsDelivr Purge API 請求
+      // 以並行方式 (Concurrent) 發送 jsDelivr Purge API 請求
       const purgeRequests = Array.from(currentUrls).map(url => {
         const purgeUrl = url.replace('https://cdn.jsdelivr.net/', 'https://purge.jsdelivr.net/');
         return fetch(purgeUrl, { mode: 'cors' }).catch(err => {
