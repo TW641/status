@@ -1,23 +1,23 @@
 (function() {
-  // 🛡️ 終極防護：防止腳本被 Svelte 或瀏覽器重複執行，造成事件綁定兩次（解決跑兩輪、跳兩次 Alert 的真兇）
+  // 🛡️ 防護機制 (Singleton Guard)：防止 SPA 路由切換時導致腳本重複載入與事件重複綁定 (Memory Leak)
   if (window.__jsDelivrScriptLoaded) return;
   window.__jsDelivrScriptLoaded = true;
 
-  console.log("🚀 jsDelivr 轉換、API 防護、無障礙 H4 語意修正與精準清除快取腳本已啟動！");
+  console.log("🚀 jsDelivr 路由轉換、API 速率防護、A11y 語意修正與 CDN 快取強制清除腳本已啟動！");
 
-  // 取得網址列的快取破壞者 (Cache Buster) 參數
+  // 取得網址列的快取無效化參數 (Cache Buster)
   const urlParams = new URLSearchParams(window.location.search);
   const cacheBuster = urlParams.get('t');
 
-  // 核心邏輯：將舊版 /status/master/ 替換為新版 /status@master/
+  // 核心邏輯：將舊版 /status/master/ 替換為支援 jsDelivr CDN 的 /status@master/ 格式
   const fix = url => typeof url === 'string' ? url.replace('/status/master/', '/status@master/') : url;
 
-  // 記錄需要清除快取的 CDN 資源網址
+  // 記錄需要進行 Purge 的 CDN 資源網址集合 (Set)
   const fetchTargets = new Set();
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/history/summary.json');
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js');
 
-  // 1. 攔截原生 fetch 函式
+  // 1. 攔截瀏覽器原生 fetch API (Intercept Proxy)
   const origFetch = window.fetch;
   window.fetch = async function(...args) {
     let reqUrl = '';
@@ -32,9 +32,10 @@
       return origFetch.apply(this, args);
     }
 
+    // 🛡️ API 速率限制防護：阻擋高頻率的 GitHub API 請求以避免消耗配額 (Rate Limit Exceeded)
     if (reqUrl.includes('api.github.com/repos/TW641/status/issues') || 
         reqUrl.includes('api.github.com/repos/TW641/status/commits')) {
-      console.warn('🛡️ 已攔截 GitHub API 請求並回傳空陣列，防止消耗額度:', reqUrl);
+      console.warn('🛡️ 已攔截 GitHub API 請求並 Mock 為空陣列，防止消耗配額:', reqUrl);
       return new Response(JSON.stringify([]), {
         status: 200,
         headers: { 'Content-Type': 'application/json' }
@@ -58,42 +59,41 @@
     
     try {
       const response = await origFetch.apply(this, args);
+      // 容錯處理：若 GitHub API 異常，自動攔截並 Mock 為 200 OK，防止前端 Svelte 崩潰 (White Screen of Death)
       if (!response.ok && reqUrl.includes('api.github.com')) {
-        console.error(`⚠️ GitHub API 回傳錯誤 (${response.status})，已自動偽裝為 200 以防止前端崩潰。`);
+        console.error(`⚠️ GitHub API 回傳錯誤 (${response.status})，已自動攔截並 Mock 為 200 狀態碼以維持前端穩定。`);
         return new Response(JSON.stringify([]), { status: 200, headers: { 'Content-Type': 'application/json' } });
       }
       return response;
     } catch (error) {
-      console.error('🌐 網路請求發生例外狀況:', error);
+      console.error('🌐 網路請求發生例外錯誤 (Exception):', error);
       throw error;
     }
   };
 
-  // 🛠️ 核心優化：強迫重構標題階層（將錯誤的 h4 動態修正為標準的 h3，修復 Lighthouse 無障礙扣分）
+  // 🛠️ 無障礙語意 (A11y) 修正：將錯誤的 h4 動態重構為標準的 h3，修復 Lighthouse 階層警告
   const fixHeadingHierarchy = () => {
     document.querySelectorAll('h4').forEach(h4 => {
-      // 建立一個標準的 h3 標籤
       const h3 = document.createElement('h3');
       
-      // 點對點複製所有原生的屬性（包含 Svelte 動態注入的 class、style 與 id 等）
+      // 點對點複製所有原生屬性（包含 Svelte 動態注入的 class、style 與 id）
       Array.from(h4.attributes).forEach(attr => {
         h3.setAttribute(attr.name, attr.value);
       });
       
-      // 轉移所有的子節點與文字內容，確保原本的 UI 樣式與排版一字不差
+      // 轉移所有子節點與文字內容，確保 UI 渲染一致
       while (h4.firstChild) {
         h3.appendChild(h4.firstChild);
       }
       
-      // 在 DOM 樹中執行精準替換
+      // 在 DOM 樹中執行 Runtime 替換
       h4.parentNode.replaceChild(h3, h4);
-      console.log("🛡️ 已成功將未依序顯示之 h4 標籤重構為標準 h3 語意標籤，無障礙架構修復完成。");
+      console.log("🛡️ 已將未依序顯示之 h4 重構為 h3，無障礙語意 (A11y) 階層修復完成。");
     });
   };
 
-  // 2. 封裝 DOM 掃描邏輯：確保圖片快取與標題語意都被精準攔截
+  // 2. 封裝 DOM 掃描邏輯：動態修正圖片路徑、背景樣式與標題語意
   const scanAndFixDOM = () => {
-    // 執行無障礙標題階層修正
     fixHeadingHierarchy();
 
     // 處理常規圖片 (img 標籤)
@@ -111,7 +111,7 @@
       if (currentSrc !== newSrc) img.src = newSrc;
     });
 
-    // 處理寫在 style 裡面的背景圖 (針對 Svelte 動態注入的 --background: url(...))
+    // 處理 Svelte 動態注入的 inline style 背景圖 (--background: url(...))
     document.querySelectorAll('[style]').forEach(el => {
       const originalStyle = el.getAttribute('style');
       if (!originalStyle) return;
@@ -126,17 +126,17 @@
         });
       }
 
-      // 只有真正改變時才寫入，防堵 MutationObserver 無限迴圈
+      // 限定發生變更 (Mutated) 時才寫入 DOM，防堵 MutationObserver 引發 Call Stack Overflow
       if (originalStyle !== newStyle) {
         el.setAttribute('style', newStyle);
       }
     });
   };
 
-  // 腳本載入時立即執行初次攔截，阻擊漏網之魚
+  // 腳本載入時立即執行初次掃描
   scanAndFixDOM();
 
-  // 啟動進級版 MutationObserver，動態監聽並隨時擊穿 Svelte 後續渲染的 h4 與資源變動
+  // 啟動 MutationObserver，持續監聽 Svelte 後續渲染的 DOM 變動
   new MutationObserver(scanAndFixDOM).observe(document.documentElement, { 
     childList: true, 
     subtree: true, 
@@ -144,7 +144,7 @@
     attributeFilter: ['style', 'src']
   });
 
-  // 3. 監聽導覽列 (Navbar) 按鈕，執行快取清除流程
+  // 3. 監聽導覽列 (Navbar) 快取清除事件
   document.addEventListener('click', async (e) => {
     const targetLink = e.target.closest('a');
     
@@ -156,13 +156,11 @@
 
       const currentUrls = new Set(fetchTargets);
       
-      // 收集 img, script, link
       document.querySelectorAll('img[src], script[src], link[href]').forEach(el => {
         const url = el.src || el.href;
         if (url && url.includes('cdn.jsdelivr.net')) currentUrls.add(url.split('?')[0]);
       });
 
-      // 收集 style 裡的背景圖
       document.querySelectorAll('[style]').forEach(el => {
         const styleAttr = el.getAttribute('style');
         if (styleAttr && styleAttr.includes('cdn.jsdelivr.net')) {
@@ -171,6 +169,7 @@
         }
       });
 
+      // 併發 (Concurrent) 執行 Purge 請求
       const purgeRequests = Array.from(currentUrls).map(url => {
         const purgeUrl = url.replace('https://cdn.jsdelivr.net/', 'https://purge.jsdelivr.net/');
         return fetch(purgeUrl, { mode: 'cors' }).catch(err => {
@@ -180,10 +179,11 @@
 
       await Promise.all(purgeRequests);
 
-      alert("✅ CDN 快取已強制更新！網頁即將重新整理以載入最新資料。");
+      alert("✅ CDN 快取已強制清除！即將重新載入頁面以取得最新資料。");
       
+      // 執行 Hard Reload 並附加快取無效化參數
       const reloadUrl = new URL(window.location.href);
-      reloadUrl.hash = ''; // 清除錨點 (hash)
+      reloadUrl.hash = ''; 
       
       const pathSegments = reloadUrl.pathname.split('/');
       const lastSegment = pathSegments[pathSegments.length - 1];
