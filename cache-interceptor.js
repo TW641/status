@@ -1,9 +1,9 @@
 (function() {
-  // 🛡️ 單例模式防護 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定 (避免 Memory Leak)
+  // 🛡️ 單例模式防禦 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定，徹底杜絕記憶體洩漏 (Memory Leak)
   if (window.__jsDelivrScriptLoaded) return;
   window.__jsDelivrScriptLoaded = true;
 
-  console.log("🚀 jsDelivr 路由轉換、API 速率防護、A11y 語意重構與 CDN 快取清洗腳本已啟動！");
+  console.log("🚀 jsDelivr 路由轉換、API 速率防護、A11y 語意重構與 CDN 快取強制清除腳本已啟動！");
 
   // 擷取網址列的快取破壞參數 (Cache Buster)
   const urlParams = new URLSearchParams(window.location.search);
@@ -12,7 +12,7 @@
   // 核心邏輯：將舊版 /status/master/ 替換為支援 jsDelivr CDN 的 /status@master/ 格式
   const fix = url => typeof url === 'string' ? url.replace('/status/master/', '/status@master/') : url;
 
-  // 建立 Set 集合，用於記錄需執行 CDN 快取清洗 (Purge) 的資源網址
+  // 建立 Set 集合，用於記錄需執行 CDN 快取清除 (Purge) 的資源網址，利用 Set 特性自動排除重複網址
   const fetchTargets = new Set();
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/history/summary.json');
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js');
@@ -23,19 +23,23 @@
     let reqUrl = '';
     let isRequestObject = false;
 
+    // 嚴謹解析傳入的參數型態，涵蓋 String、URL 物件與 Request 物件
     if (typeof args[0] === 'string') {
       reqUrl = args[0];
+    } else if (args[0] instanceof URL) {
+      reqUrl = args[0].toString();
     } else if (args[0] instanceof Request) {
       reqUrl = args[0].url;
       isRequestObject = true;
     } else {
+      // 遇到未知型態，安全退回原生行為
       return origFetch.apply(this, args);
     }
 
-    // 🛡️ API 速率限制 (Rate Limit) 防禦：攔截高頻率 GitHub API 請求，避免消耗 Token 配額
+    // 🛡️ API 請求配額限制 (Rate Limit) 防禦：攔截高頻率的 GitHub API 請求，避免消耗 Token 額度
     if (reqUrl.includes('api.github.com/repos/TW641/status/issues') || 
         reqUrl.includes('api.github.com/repos/TW641/status/commits')) {
-      console.warn('🛡️ 已攔截 GitHub API 請求並 Mock 為空陣列，防止消耗配額:', reqUrl);
+      console.warn('🛡️ 已攔截 GitHub API 請求並模擬 (Mock) 為空陣列，防止消耗配額:', reqUrl);
       return new Response(JSON.stringify([]), {
         status: 200,
         headers: { 'Content-Type': 'application/json' }
@@ -51,49 +55,51 @@
       }
     }
 
+    // 重構攔截後的請求參數
     if (isRequestObject) {
-      args[0] = new Request(reqUrl, args[0]);
+      // 使用 .clone() 確保不干擾原始 Request 物件的 Body 讀取狀態，再套用新網址
+      args[0] = new Request(reqUrl, args[0].clone());
     } else {
       args[0] = reqUrl;
     }
     
     try {
       const response = await origFetch.apply(this, args);
-      // 容錯機制 (Fallback)：若 GitHub API 發生異常，自動攔截並 Mock 狀態碼為 200，避免前端 Svelte 發生白畫面崩潰 (White Screen of Death)
+      // 容錯機制 (Fallback)：若 GitHub API 發生 403 或 404 等異常，自動攔截並 Mock 為 200 狀態碼，避免前端 Svelte 發生畫面白屏 (White Screen of Death)
       if (!response.ok && reqUrl.includes('api.github.com')) {
-        console.error(`⚠️ GitHub API 回傳錯誤 (${response.status})，已自動攔截並 Mock 為 200 狀態碼以維持前端穩定。`);
+        console.error(`⚠️ GitHub API 回傳錯誤 (${response.status})，已自動攔截並模擬為 200 狀態碼以維持前端穩定。`);
         return new Response(JSON.stringify([]), { status: 200, headers: { 'Content-Type': 'application/json' } });
       }
       return response;
     } catch (error) {
-      console.error('🌐 網路請求發生例外狀況 (Exception):', error);
+      console.error('🌐 網路請求發生例外錯誤 (Exception):', error);
       throw error;
     }
   };
 
-  // 🛠️ 無障礙語意 (A11y) 修正：將錯誤的 h4 動態重構為標準的 h3 標籤，解決 Lighthouse 標題階層降級警告
+  // 🛠️ 無障礙網頁 (A11y) 修正：將錯誤的 h4 動態重構為標準的 h3 標籤，解決 Lighthouse 標題階層降級警告
   const fixHeadingHierarchy = () => {
     let hasReplaced = false;
     document.querySelectorAll('h4').forEach(h4 => {
       const h3 = document.createElement('h3');
       
-      // 1:1 完整複製原生屬性 (包含 Svelte 動態注入的 class、style 與 id 等)
+      // 1:1 完整拷貝原生屬性 (包含 Svelte 動態注入的 class、style 與資料綁定 id)
       Array.from(h4.attributes).forEach(attr => {
         h3.setAttribute(attr.name, attr.value);
       });
       
-      // 轉移所有子節點與文字內容，確保 UI 渲染與排版一字不差
+      // 轉移所有子節點與內部文字，確保 UI 渲染與排版無損
       while (h4.firstChild) {
         h3.appendChild(h4.firstChild);
       }
       
-      // 在 DOM 樹中執行 Runtime 節點替換
+      // 在 DOM 樹中執行執行期 (Runtime) 節點替換
       h4.parentNode.replaceChild(h3, h4);
       hasReplaced = true;
     });
     
     if (hasReplaced) {
-      console.debug("🛡️ 已將未依序顯示之 h4 動態重構為 h3，無障礙語意 (A11y) 階層修復完成。");
+      console.debug("🛡️ 已將階層錯誤的 h4 動態重構為 h3，無障礙語意 (A11y) 修復完成。");
     }
   };
 
@@ -116,7 +122,7 @@
       if (currentSrc !== newSrc) img.src = newSrc;
     });
 
-    // 處理 Svelte 動態注入的 inline style 背景圖 (--background: url(...))
+    // 處理 Svelte 動態注入的行內樣式背景圖 (--background: url(...))
     document.querySelectorAll('[style]').forEach(el => {
       const originalStyle = el.getAttribute('style');
       if (!originalStyle) return;
@@ -131,17 +137,17 @@
         });
       }
 
-      // 僅在發生變異 (Mutated) 時才回寫 DOM，嚴格防止觸發 MutationObserver 無限迴圈 (Call Stack Overflow)
+      // 嚴格防護：僅在屬性真實發生異動 (Changed) 時才回寫 DOM，徹底防止觸發 MutationObserver 無窮迴圈 (Call Stack Overflow)
       if (originalStyle !== newStyle) {
         el.setAttribute('style', newStyle);
       }
     });
   };
 
-  // 腳本載入時立即執行初次掃描，阻擊漏網之魚
+  // 腳本載入時立即執行初次掃描，處理初始掛載的 DOM
   scanAndFixDOM();
 
-  // 啟動 MutationObserver，持續監聽 Svelte 後續渲染的 DOM 變動
+  // 啟動 MutationObserver，持續監聽 Svelte 後續渲染引發的 DOM 節點異動
   new MutationObserver(scanAndFixDOM).observe(document.documentElement, { 
     childList: true, 
     subtree: true, 
@@ -149,8 +155,9 @@
     attributeFilter: ['style', 'src']
   });
 
-  // 3. 監聽導覽列 (Navbar) 快取清除事件
+  // 3. 監聽導覽列 (Navbar) 快取強制清除事件
   document.addEventListener('click', async (e) => {
+    // 利用事件委派 (Event Delegation) 尋找最近的 <a> 標籤
     const targetLink = e.target.closest('a');
     
     if (targetLink && targetLink.getAttribute('href') === '#purge-cache') {
@@ -161,11 +168,13 @@
 
       const currentUrls = new Set(fetchTargets);
       
+      // 蒐集網頁中所有的 img, script, link
       document.querySelectorAll('img[src], script[src], link[href]').forEach(el => {
         const url = el.src || el.href;
         if (url && url.includes('cdn.jsdelivr.net')) currentUrls.add(url.split('?')[0]);
       });
 
+      // 蒐集行內樣式中的背景圖
       document.querySelectorAll('[style]').forEach(el => {
         const styleAttr = el.getAttribute('style');
         if (styleAttr && styleAttr.includes('cdn.jsdelivr.net')) {
@@ -174,7 +183,7 @@
         }
       });
 
-      // 以並行方式 (Concurrent) 發送 Purge 清洗請求
+      // 以並行 (Concurrent) 方式發送 jsDelivr Purge API 請求
       const purgeRequests = Array.from(currentUrls).map(url => {
         const purgeUrl = url.replace('https://cdn.jsdelivr.net/', 'https://purge.jsdelivr.net/');
         return fetch(purgeUrl, { mode: 'cors' }).catch(err => {
@@ -186,7 +195,7 @@
 
       alert("✅ CDN 快取已強制清除！即將重新載入頁面以取得最新資料。");
       
-      // 執行強制重新載入 (Hard Reload) 並注入快取破壞參數
+      // 執行強制重新載入 (Hard Reload) 並注入最新的快取破壞參數
       const reloadUrl = new URL(window.location.href);
       reloadUrl.hash = ''; 
       
