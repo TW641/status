@@ -307,14 +307,18 @@ status-website:
     為推動開源監測架構的發展並加速搜尋引擎收錄，以下為本站維護者於核心專案提交之優化成果（點選超連結前往）：
     
     **Upptime 核心組件優化成果：**
-    * 🔗 [\[Bug\]\[Solved by TW641 / TWShiyuLiou1997\] Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime](https://github.com/upptime/upptime/pull/1168)
-    * 🔗 [:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor](https://github.com/upptime/uptime-monitor/pull/308)
-    * 🔗 [feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime](https://github.com/upptime/upptime/pull/1169)
+    <ul>
+    <li><a href="https://github.com/upptime/upptime/pull/1168" target="_blank">[Bug][Solved by TW641 / TWShiyuLiou1997] Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li>
+    <li><a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
+    <li><a href="https://github.com/upptime/upptime/pull/1169" target="_blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">https://github.com/upptime/upptime/pull/1169</a></li>
+    </ul>
 
     **Uptimer 國際化與介面體驗優化成果：**
-    * 🔗 [i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer](https://github.com/VrianCao/Uptimer/pull/94)
-    * 🔗 [style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer](https://github.com/VrianCao/Uptimer/pull/95)
-    * 🔗 [style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer](https://github.com/VrianCao/Uptimer/pull/96)
+    <ul>
+    <li><a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
+    <li><a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
+    <li><a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
+    </ul>
 
     ---
 
@@ -361,62 +365,62 @@ status-website:
     引導搜尋引擎收錄子節點並確認全網交叉可用性（為確保瀏覽器效能，**請點選特定服務獨立展開載入預覽畫面**）：
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">👑 <b>1. TW641 Status 主力頁</b> (點選展開預覽) | 🔗 <a href="https://tw641status.pages.dev/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">👑 <b>1. TW641 Status 主力頁</b> (點這裡展開預覽) | 🔗 <a href="https://tw641status.pages.dev/" target="_blank">點這裡直接前往網站：https://tw641status.pages.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641status.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Status Monitor"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">👑 <b>2. TW641 Uptimer 主力頁</b> (點選展開預覽) | 🔗 <a href="https://tw641uptimer.pages.dev/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">👑 <b>2. TW641 Uptimer 主力頁</b> (點這裡展開預覽) | 🔗 <a href="https://tw641uptimer.pages.dev/" target="_blank">點這裡直接前往網站：https://tw641uptimer.pages.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641uptimer.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Uptimer Monitor"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>3. GitHub Pages 官方主站</b> (點選展開預覽) | 🔗 <a href="https://tw641.github.io/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>3. GitHub Pages 官方主站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.github.io/" target="_blank">點這裡直接前往網站：https://tw641.github.io/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.github.io/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="GitHub Pages"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>4. Cloudflare Pages 備援站</b> (點選展開預覽) | 🔗 <a href="https://tw641.pages.dev/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>4. Cloudflare Pages 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.pages.dev/" target="_blank">點這裡直接前往網站：https://tw641.pages.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Cloudflare Pages"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>5. Cloudflare Workers 備援站</b> (點選展開預覽) | 🔗 <a href="https://www.tw641.workers.dev/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>5. Cloudflare Workers 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://www.tw641.workers.dev/" target="_blank">點這裡直接前往網站：https://www.tw641.workers.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://www.tw641.workers.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Cloudflare Workers"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>6. Firebase Hosting 備援站</b> (點選展開預覽) | 🔗 <a href="https://tw641t.web.app/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>6. Firebase Hosting 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641t.web.app/" target="_blank">點這裡直接前往網站：https://tw641t.web.app/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641t.web.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Firebase Hosting"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>7. FirebaseApp.com 備用網域</b> (點選展開預覽) | 🔗 <a href="https://tw641t.firebaseapp.com/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>7. FirebaseApp.com 備用網域</b> (點這裡展開預覽) | 🔗 <a href="https://tw641t.firebaseapp.com/" target="_blank">點這裡直接前往網站：https://tw641t.firebaseapp.com/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641t.firebaseapp.com/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="FirebaseApp"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>8. GitLab Pages 備援站</b> (點選展開預覽) | 🔗 <a href="https://tw641.gitlab.io/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>8. GitLab Pages 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.gitlab.io/" target="_blank">點這裡直接前往網站：https://tw641.gitlab.io/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.gitlab.io/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="GitLab Pages"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>9. Netlify 備援站</b> (點選展開預覽) | 🔗 <a href="https://tw641.netlify.app/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>9. Netlify 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.netlify.app/" target="_blank">點這裡直接前往網站：https://tw641.netlify.app/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.netlify.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Netlify"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>10. Vercel 備援站</b> (點選展開預覽) | 🔗 <a href="https://tw641.vercel.app/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>10. Vercel 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.vercel.app/" target="_blank">點這裡直接前往網站：https://tw641.vercel.app/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.vercel.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Vercel"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>11. Render 備援站</b> (點選展開預覽) | 🔗 <a href="https://tw641.onrender.com/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>11. Render 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.onrender.com/" target="_blank">點這裡直接前往網站：https://tw641.onrender.com/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.onrender.com/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Render"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer;">🌐 <b>12. Surge 備援站</b> (點選展開預覽) | 🔗 <a href="https://tw641.surge.sh/" target="_blank">直接前往網站</a></summary>
+    <summary style="cursor: pointer;">🌐 <b>12. Surge 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.surge.sh/" target="_blank">點這裡直接前往網站：https://tw641.surge.sh/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.surge.sh/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Surge"></iframe></div>
     </details>
 
