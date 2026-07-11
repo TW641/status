@@ -1,5 +1,5 @@
 (function() {
-  // 🛡️ 單例模式防護 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定，徹底杜絕記憶體洩漏 (Memory Leak)
+  // 🛡️ 單例模式防禦 (Singleton Guard)：防止 SPA 路由切換時引發腳本重複執行與事件重複綁定，徹底杜絕記憶體洩漏 (Memory Leak)
   if (window.__jsDelivrScriptLoaded) return;
   window.__jsDelivrScriptLoaded = true;
 
@@ -80,6 +80,9 @@
   const fixHeadingHierarchy = () => {
     let hasReplaced = false;
     document.querySelectorAll('h4').forEach(h4 => {
+      // 防禦邊界條件：確保節點確實掛載在 DOM 樹上，避免脫離文件的虛擬節點引發 TypeError
+      if (!h4.parentNode) return;
+
       const h3 = document.createElement('h3');
       
       // 1:1 完整拷貝原生屬性 (包含 Svelte 動態注入的 class、style 與資料綁定 id)
