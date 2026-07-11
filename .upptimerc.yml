@@ -271,40 +271,43 @@ status-website:
   scripts:
     - src: https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js
       async: false
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: demo.upptime.js.org
   customHeadHtml: |
     <link rel="canonical" href="https://tw641.github.io/status/">
     <meta name="google-site-verification" content="-vHIVPvpGauTz39uKyANi2BPSfJwrsrxGVMagKliEgE">
     <meta name="google-site-verification" content="OV7xROgDy7S6bx5Mrsf5hefCfoKkRYgE0F9raeoZ8qc">
 
   customBodyHtml: |
-    <div style="display: none; position: absolute;">
-    TW641 Status Page - 即時服務監測系統
-    監測以下 10 個平台的 70 個節點：
-    1. GitHub Pages - TW641 官方主站與子專案（7 個）
-    2. Cloudflare Pages - 備援網站（7 個）
-    3. Cloudflare Workers - 備援網站（7 個）
-    4. Firebase Hosting - 備援網站（7 個）
-    5. FirebaseApp.com - 備用網域（7 個）
-    6. GitLab Pages - 備援網站（7 個）
-    7. Netlify - 備援網站（7 個）
-    8. Vercel - 備援網站（7 個）
-    9. Render - 備援網站（7 個）
-    10. Surge - 備援網站（7 個）
-    
-    即時監測服務包括：
-    - TW641 GitHub Pages 官方主站 - 首頁
-    - TW641 GitHub Pages 官方主站 - daves-guitar-2026
-    - TW641 GitHub Pages 官方主站 - Padavan-CAKE
-    - TW641 GitHub Pages 官方主站 - sch_cake
-    - TW641 GitHub Pages 官方主站 - padavan-builder-workflow
-    - TW641 GitHub Pages 官方主站 - padavan-ng
-    - TW641 GitHub Pages 官方主站 - padavan-4.4
-    以及 Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge 等多個備援平台的監測。
-    
-    採用開源方案 Upptime，無需額外伺服器。
+    <div style="margin-top: 30px; padding: 15px; border: 1px solid #e1e4e8; border-radius: 6px; background-color: #f6f8fa;">
+    <details>
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1em;">📊 TW641 Status Page - 異質多雲即時服務監測系統 (系統架構明細)</summary>
+    <div style="margin-top: 15px; line-height: 1.6;">
+    <p>本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：</p>
+    <ul>
+    <li>1. GitHub Pages - TW641 官方主站與子專案（7 個）</li>
+    <li>2. Cloudflare Pages - 備援網站（7 個）</li>
+    <li>3. Cloudflare Workers - 備援網站（7 個）</li>
+    <li>4. Firebase Hosting - 備援網站（7 個）</li>
+    <li>5. FirebaseApp.com - 備用網域（7 個）</li>
+    <li>6. GitLab Pages - 備援網站（7 個）</li>
+    <li>7. Netlify - 備援網站（7 個）</li>
+    <li>8. Vercel - 備援網站（7 個）</li>
+    <li>9. Render - 備援網站（7 個）</li>
+    <li>10. Surge - 備援網站（7 個）</li>
+    </ul>
+    <p>即時監測服務包括：</p>
+    <ul>
+    <li>TW641 GitHub Pages 官方主站 - 首頁</li>
+    <li>TW641 GitHub Pages 官方主站 - daves-guitar-2026</li>
+    <li>TW641 GitHub Pages 官方主站 - Padavan-CAKE</li>
+    <li>TW641 GitHub Pages 官方主站 - sch_cake</li>
+    <li>TW641 GitHub Pages 官方主站 - padavan-builder-workflow</li>
+    <li>TW641 GitHub Pages 官方主站 - padavan-ng</li>
+    <li>TW641 GitHub Pages 官方主站 - padavan-4.4</li>
+    </ul>
+    <p>以及 Cloudflare Pages、Cloudflare Workers、Firebase Hosting、FirebaseApp.com、GitLab Pages、Netlify、Vercel、Render、Surge 等多個備援平台的監測。</p>
+    <p><strong>架構聲明：</strong><strong>即時高可用性數據一律依賴 Uptimer 邊緣運算架構作為絕對主力。</strong>備用歷史數據則採用開源方案 Upptime（無需額外伺服器），本質上僅作為備用架構的監測器。</p>
+    </div>
+    </details>
     </div>
   
   robotsText: "User-agent: *\nAllow: /"
@@ -319,11 +322,82 @@ status-website:
   name: TW641 Status
   introTitle: "TW641 Real-time Uptime Monitor | 70 Nodes Global Availability Status"
   introMessage: |
-    **TW641 即時監測服務狀態頁面：** 監測官方主站與與備援網站，10 種異質多雲備援架構，共 70 個節點的可用性。
+    **TW641 多層次高可用性狀態中心**
+    為克服單一服務的盲區，本系統採用「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構：
 
-    **監測平台：** [GitHub Pages](https://tw641.github.io/)、[Cloudflare Pages](https://tw641.pages.dev/)、[Cloudflare Workers](https://www.tw641.workers.dev/)、[Firebase Hosting](https://tw641t.web.app/)、[FirebaseApp.com](https://tw641t.firebaseapp.com/)、[GitLab Pages](https://tw641.gitlab.io/)、[Netlify](https://tw641.netlify.app/)、[Vercel](https://tw641.vercel.app/)、[Render](https://tw641.onrender.com/)、[Surge](https://tw641.surge.sh/)
+    🚀 **即時精準狀態頁 (Uptimer)：高頻率邊緣運算 (絕對主力)**
+    基於 Cloudflare Workers 的現代化架構，實現「每分鐘準時觸發」的秒級探測！雙主力節點提供深度互動式數據解析：
+    * **高頻率即時指標**：狀態頁面直觀顯示「最近 60 次檢查」的可用性，以及該區間內「最快」、「平均」與「最慢」的伺服器回應時間。
+    * **24 小時延遲分析**：點選「最近 60 次檢查」條狀圖，即可展開最近一日的「平均延遲」、「P95 延遲」與「24 小時延遲狀態折線圖」。您亦可點選清單中的特定服務，獨立檢視該服務近 24 小時的動態。
+    * **60 天歷史中斷明細**：點選上方「近 60 天可用性」的單日條狀圖，將彈出當日「服務中斷明細」與總中斷時間（若系統穩定，則顯示如：`2026/7/6 總計: 0s 當天沒有紀錄到中斷。`）。
+    * 👑 TW641 Uptimer 主力頁： [https://tw641uptimer.pages.dev/](https://tw641uptimer.pages.dev/)
+    * 👑 TW641 Status 主力頁： [https://tw641status.pages.dev/](https://tw641status.pages.dev/)
 
-    **採用方案：** Upptime 開源架構，透過 GitHub Actions 自動化監測，無需額外伺服器。
+    🐢 **長期趨勢觀測頁 (Upptime)：本站目前架構 (僅供備用)**
+    本頁面基於傳統 GitHub Actions 架構。由於排程佇列嚴重延遲（設定 5 分鐘，實際單日可能僅執行 10 餘次），屬於完全依賴單一生態的「不定時監測架構」。**本站目前僅適合作為「長時間的觀測參考」**。
+
+    ☁️ **監測目標：10 種異質多雲備援架構 (70 個節點)**
+    涵蓋以下官方主站與備援網站（點選展開可直接載入跨站路由實體，引導爬蟲收錄並確認全網交叉可用性）：
+
+    <details>
+    <summary>👑 1. TW641 Uptimer 主力監測頁 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641uptimer.pages.dev/" target="_blank">https://tw641uptimer.pages.dev/</a><br><iframe src="https://tw641uptimer.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Uptimer Monitor"></iframe></div>
+    </details>
+
+    <details>
+    <summary>👑 2. TW641 Status 主力監測頁 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641status.pages.dev/" target="_blank">https://tw641status.pages.dev/</a><br><iframe src="https://tw641status.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Status Monitor"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 3. GitHub Pages 官方主站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641.github.io/" target="_blank">https://tw641.github.io/</a><br><iframe src="https://tw641.github.io/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="GitHub Pages"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 4. Cloudflare Pages 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641.pages.dev/" target="_blank">https://tw641.pages.dev/</a><br><iframe src="https://tw641.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Cloudflare Pages"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 5. Cloudflare Workers 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://www.tw641.workers.dev/" target="_blank">https://www.tw641.workers.dev/</a><br><iframe src="https://www.tw641.workers.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Cloudflare Workers"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 6. Firebase Hosting 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641t.web.app/" target="_blank">https://tw641t.web.app/</a><br><iframe src="https://tw641t.web.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Firebase Hosting"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 7. FirebaseApp.com 備用網域 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641t.firebaseapp.com/" target="_blank">https://tw641t.firebaseapp.com/</a><br><iframe src="https://tw641t.firebaseapp.com/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="FirebaseApp"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 8. GitLab Pages 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641.gitlab.io/" target="_blank">https://tw641.gitlab.io/</a><br><iframe src="https://tw641.gitlab.io/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="GitLab Pages"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 9. Netlify 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641.netlify.app/" target="_blank">https://tw641.netlify.app/</a><br><iframe src="https://tw641.netlify.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Netlify"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 10. Vercel 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641.vercel.app/" target="_blank">https://tw641.vercel.app/</a><br><iframe src="https://tw641.vercel.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Vercel"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 11. Render 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641.onrender.com/" target="_blank">https://tw641.onrender.com/</a><br><iframe src="https://tw641.onrender.com/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Render"></iframe></div>
+    </details>
+
+    <details>
+    <summary>🌐 12. Surge 備援站 (點選預覽)</summary>
+    <div style="margin-top: 10px;">🔗 <a href="https://tw641.surge.sh/" target="_blank">https://tw641.surge.sh/</a><br><iframe src="https://tw641.surge.sh/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px; margin-top: 10px;" loading="lazy" title="Surge"></iframe></div>
+    </details>
 
   navbar:
     - title: Status
@@ -342,5 +416,5 @@ workflowSchedule:
   updates: "0 3 * * *"
   uptime: "*/5 * * * *"
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  footer: "本狀態頁面由 [TW641](https://github.com/TW641) 建置與維護。返回 [TW641 官方主站](https://tw641.github.io/) | 👑 即時主力：[TW641 Status](https://tw641status.pages.dev/) ([原始碼](https://github.com/TW641/TW641Status)) & [TW641 Uptimer](https://tw641uptimer.pages.dev/) ([原始碼](https://github.com/TW641/TW641Uptimer)) | 備用架構：[本頁原始碼](https://github.com/TW641/status)"
