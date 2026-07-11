@@ -308,22 +308,22 @@ status-website:
     
     **Upptime 核心組件優化成果：**
     <ul>
-    <li><a href="https://github.com/upptime/upptime/pull/1168" target="_blank">[Bug][Solved by TW641 / TWShiyuLiou1997] Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li>
-    <li><a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
-    <li><a href="https://github.com/upptime/upptime/pull/1169" target="_blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">https://github.com/upptime/upptime/pull/1169</a></li>
+    <li>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li>
+    <li>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
+    <li>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">https://github.com/upptime/upptime/pull/1169</a></li>
     </ul>
 
     **Uptimer 國際化與介面體驗優化成果：**
     <ul>
-    <li><a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
-    <li><a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
-    <li><a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
+    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
+    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
+    <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
     </ul>
 
     ---
 
     <details>
-    <summary style="cursor: pointer;">📊 <b>系統架構明細與監測清單 (點選展開)</b></summary>
+    <summary style="cursor: pointer;">📊 <b>系統架構明細與監測清單 (點這裡展開)</b></summary>
     <div style="margin-top: 15px; line-height: 1.6;">
     <p>本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：</p>
     <ul>
@@ -344,7 +344,7 @@ status-website:
     <li>🔗 <a href="https://tw641.github.io/" target="_blank">TW641 GitHub Pages 官方主站 - 首頁</a></li>
     <li>🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">TW641 GitHub Pages 官方主站 - daves-guitar-2026</a></li>
     <li>🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="_blank">TW641 GitHub Pages 官方主站 - Padavan-CAKE</a></li>
-    <li>🔗 <a href="https://tw641.github.io/sch_cake/" target="_blank">TW641 GitHub Pages 官方主站 - sch_cake</a></li>
+    <li>🔗 <a href="https://tw641.github.io/sch_cake/" target="_blank">TW641 GitHub Pages 官方主站 - sch&#95;cake</a></li>
     <li>🔗 <a href="https://tw641.github.io/padavan-builder-workflow/" target="_blank">TW641 GitHub Pages 官方主站 - padavan-builder-workflow</a></li>
     <li>🔗 <a href="https://tw641.github.io/padavan-ng/" target="_blank">TW641 GitHub Pages 官方主站 - padavan-ng</a></li>
     <li>🔗 <a href="https://tw641.github.io/padavan-4.4/" target="_blank">TW641 GitHub Pages 官方主站 - padavan-4.4</a></li>
