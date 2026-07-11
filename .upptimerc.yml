@@ -295,7 +295,7 @@ status-website:
     基於 Cloudflare Workers + Cloudflare Pages + Cloudflare D1 的 ZeroOps 現代化架構，實現「每分鐘準時觸發」的秒級探測！</p>
     
     <p>雙主力節點提供深度互動式資料分析：</p>
-    <ul style="line-height: 1.6;">
+    <ul>
     <li><strong>高頻率即時指標</strong>：狀態頁面直觀顯示「最近 60 次檢查」的可用性，以及該區間內「最快」、「平均」與「最慢」的伺服器回應時間。</li>
     <li><strong>24 小時延遲分析</strong>：點選「最近 60 次檢查」條狀圖，即可展開最近一日的「平均延遲」、「P95 延遲」與「24 小時延遲狀態折線圖」。您亦可點選清單中的特定服務，獨立檢視該服務近 24 小時的動態。</li>
     <li><strong>60 天中斷明細紀錄</strong>：點選上方「近 60 天可用性」的單日條狀圖，將彈出當日「服務中斷明細」與總中斷時間（若系統穩定，則顯示如：<code>2026/7/11 總計: 0s 當天沒有紀錄到中斷。</code>）。</li>
@@ -309,14 +309,14 @@ status-website:
     為推動開源監測架構的發展並加速搜尋引擎收錄，以下為本站維護者於核心專案提交之優化成果（點選超連結前往）：</p>
     
     <p><strong>Upptime 核心組件優化成果：</strong></p>
-    <ul style="line-height: 1.6;">
+    <ul>
     <li>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li>
     <li>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
     <li>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">https://github.com/upptime/upptime/pull/1169</a></li>
     </ul>
 
     <p><strong>Uptimer 國際化與介面體驗優化成果：</strong></p>
-    <ul style="line-height: 1.6;">
+    <ul>
     <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
     <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
     <li>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
@@ -324,9 +324,8 @@ status-website:
 
     <hr style="margin: 20px 0; border: 0; border-top: 1px solid #e1e4e8;">
 
-    <details>
-    <summary style="cursor: pointer;">📊 <b>系統架構明細與監測清單 (點這裡展開)</b></summary>
-    <div style="margin-top: 15px; line-height: 1.6;">
+    <p>📊 <strong>系統架構明細與監測清單</strong></p>
+    <div style="margin-top: 15px;">
     <p>本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：</p>
     <ul>
     <li>1. <a href="https://tw641.github.io/" target="_blank">GitHub Pages - TW641 官方主站與子專案</a>（7 個）</li>
@@ -354,7 +353,6 @@ status-website:
 
     <p>以及 <a href="https://tw641.pages.dev/" target="_blank">Cloudflare Pages</a>、<a href="https://www.tw641.workers.dev/" target="_blank">Cloudflare Workers</a>、<a href="https://tw641t.web.app/" target="_blank">Firebase Hosting</a>、<a href="https://tw641t.firebaseapp.com/" target="_blank">FirebaseApp.com</a>、<a href="https://tw641.gitlab.io/" target="_blank">GitLab Pages</a>、<a href="https://tw641.netlify.app/" target="_blank">Netlify</a>、<a href="https://tw641.vercel.app/" target="_blank">Vercel</a>、<a href="https://tw641.onrender.com/" target="_blank">Render</a>、<a href="https://tw641.surge.sh/" target="_blank">Surge</a> 等多個備援平台的監測。</p>
     </div>
-    </details>
 
     <hr style="margin: 20px 0; border: 0; border-top: 1px solid #e1e4e8;">
 
