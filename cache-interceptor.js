@@ -210,14 +210,21 @@
       // 蒐集網頁中所有的 img, script, link
       document.querySelectorAll('img[src], script[src], link[href]').forEach(el => {
         const url = el.src || el.href;
-        if (url && url.includes('cdn.jsdelivr.net')) currentUrls.add(url.split('?')[0]);
+        // 🚀 [修復 1] 排除純網域根目錄：防禦掃描到 preconnect 標籤引發的 422 Unprocessable Content 錯誤
+        if (url && url.includes('cdn.jsdelivr.net') && url !== 'https://cdn.jsdelivr.net/' && url !== 'https://cdn.jsdelivr.net') {
+          currentUrls.add(url.split('?')[0]);
+        }
       });
 
       // 蒐集行內樣式中的背景圖
-      document.querySelectorAll('[style]').forEach(el => {
-        const styleAttr = el.getAttribute('style');
-        if (styleAttr && styleAttr.includes('cdn.jsdelivr.net')) {
-          const match = styleAttr.match(/url\(['"]?(https:\/\/cdn\.jsdelivr\.net[^'"]+)['"]?\)/);
+      // 🚀 [修復 2] 擴大掃描範圍：一併掃描被封印在 dataset.lazyBg 中、尚未被載入的圖表網址
+      document.querySelectorAll('[style], [data-lazy-bg]').forEach(el => {
+        const styleAttr = el.getAttribute('style') || '';
+        const lazyBg = el.dataset.lazyBg || '';
+        const combinedString = styleAttr + ' ' + lazyBg;
+        
+        if (combinedString.includes('cdn.jsdelivr.net')) {
+          const match = combinedString.match(/url\(['"]?(https:\/\/cdn\.jsdelivr\.net[^'"]+)['"]?\)/);
           if (match && match[1]) currentUrls.add(match[1].split('?')[0]);
         }
       });
