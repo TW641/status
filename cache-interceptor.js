@@ -17,6 +17,21 @@
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/history/summary.json');
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js');
 
+  // 🚀 [新增] 建立高效能 IntersectionObserver：專門攔截與延遲載入 (Lazy Load) 巨量 CSS 背景圖
+  const bgObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        if (el.dataset.lazyBg) {
+          // 當元素即將進入視窗，將隱藏的 URL 塞回 CSS 變數中，解鎖並觸發圖片下載
+          el.style.setProperty('--background', el.dataset.lazyBg);
+          el.removeAttribute('data-lazy-bg');
+          observer.unobserve(el);
+        }
+      }
+    });
+  }, { rootMargin: '200px 0px' }); // 提早 200px 預先載入，確保滑動體驗平滑無縫隙
+
   // 1. 攔截並代理瀏覽器原生 fetch API (Network Proxy)
   const origFetch = window.fetch;
   window.fetch = async function(...args) {
@@ -110,7 +125,12 @@
     fixHeadingHierarchy();
 
     // 處理一般圖片節點 (img 標籤)
-    document.querySelectorAll('img').forEach(img => {
+    document.querySelectorAll('img').forEach((img, index) => {
+      // 🚀 [魔術 1] 原生 Lazy Load 注入：過濾首張圖片 (保全 LCP 分數)，其餘圖片強制延遲載入
+      if (index > 0 && !img.hasAttribute('loading')) {
+        img.setAttribute('loading', 'lazy');
+      }
+
       let currentSrc = img.src;
       if (!currentSrc) return;
       
@@ -141,6 +161,17 @@
 
       // 嚴格防護：僅在屬性真實發生異動 (Changed) 時才回寫 DOM，徹底防止觸發 MutationObserver 無窮迴圈 (Call Stack Overflow)
       if (originalStyle !== newStyle) {
+        // 🚀 [魔術 2] CSS 暴力攔截：偵測到更新後的背景網址，直接將其拔除並交給監視器延遲載入
+        if (newStyle.includes('--background: url')) {
+          const bgMatch = newStyle.match(/--background:\s*(url\(['"]?[^'"]+['"]?\))/);
+          if (bgMatch && bgMatch[1]) {
+            const styleWithoutBg = newStyle.replace(bgMatch[1], 'none');
+            el.setAttribute('style', styleWithoutBg); // 寫入 "none" 阻擋瀏覽器偷跑下載
+            el.dataset.lazyBg = bgMatch[1];           // 將 CDN 快取網址封印在 dataset 裡
+            bgObserver.observe(el);                   // 移交 IntersectionObserver 管管
+            return; // 提早結束，避免執行下方的一般寫入
+          }
+        }
         el.setAttribute('style', newStyle);
       }
     });
@@ -185,7 +216,7 @@
         }
       });
 
-      // 以並行方式 (Concurrent) 發送 jsDelivr Purge API 請求
+      // 以並行 (Concurrent) 方式發送 jsDelivr Purge API 請求
       const purgeRequests = Array.from(currentUrls).map(url => {
         const purgeUrl = url.replace('https://cdn.jsdelivr.net/', 'https://purge.jsdelivr.net/');
         return fetch(purgeUrl, { mode: 'cors' }).catch(err => {
