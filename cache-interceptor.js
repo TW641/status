@@ -135,6 +135,10 @@
       if (img.classList.contains('icon')) {
         if (!img.hasAttribute('width')) img.setAttribute('width', '16');
         if (!img.hasAttribute('height')) img.setAttribute('height', '16');
+      } else if (img.closest('a.logo')) {
+        // 🚀 精準定位：僅針對被包在 a.logo 內的 img 本身注入 48x48，完美避開動態 class 且絕不干擾文字區塊！
+        if (!img.hasAttribute('width')) img.setAttribute('width', '48');
+        if (!img.hasAttribute('height')) img.setAttribute('height', '48');
       }
 
       let currentSrc = img.src;
