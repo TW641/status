@@ -131,6 +131,12 @@
         img.setAttribute('loading', 'lazy');
       }
 
+      // 🛡️ [極限優化新增] 強制注入實體寬高：解決 Lighthouse「圖片沒有明確寬高」警告，徹底消滅強制自動重排 (Reflow)
+      if (img.classList.contains('icon')) {
+        if (!img.hasAttribute('width')) img.setAttribute('width', '16');
+        if (!img.hasAttribute('height')) img.setAttribute('height', '16');
+      }
+
       let currentSrc = img.src;
       if (!currentSrc) return;
       
