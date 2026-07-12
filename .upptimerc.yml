@@ -272,6 +272,10 @@ status-website:
     - src: https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js
       async: false
   customHeadHtml: |
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js" as="script" crossorigin="anonymous">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/TW641/status@master/history/summary.json" as="fetch" crossorigin="anonymous">
     <link rel="canonical" href="https://tw641.github.io/status/">
     <meta name="google-site-verification" content="-vHIVPvpGauTz39uKyANi2BPSfJwrsrxGVMagKliEgE">
     <meta name="google-site-verification" content="OV7xROgDy7S6bx5Mrsf5hefCfoKkRYgE0F9raeoZ8qc">
