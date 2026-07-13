@@ -374,37 +374,35 @@ status-website:
     為突破此極限，本站已由 TW641 進行深度重構：<strong>摒棄原生脆弱的獲取機制，全面導入 Multi-CDN 快取攔截、API 速率防護網，以及底層 DOM 渲染防抖 (rAF) 優化</strong>。將原本緩慢且不穩定的架構，強行推升至 Lighthouse 的四項指標：效能、無障礙功能、最佳做法、搜尋引擎最佳化 (SEO)，全面達成 100 滿分的極致巔峰。目前此頁面已被降級為「長時間的觀測參考」，即時監測請依賴上方的新世代 Edge-native 核心。
     <br>
     <strong>⚖️ 核心監測架構性能指標對比：</strong>
-    <ul style="list-style-type: none; padding-left: 0; margin-top: 12px; font-size: 14px;">
-      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); word-break: break-word; overflow-wrap: anywhere; font-weight: bold;">
-        📌 資料獲取邏輯<br>
-        ❌ 原生架構： 偽命題架構：前端無驗證 API 頻繁請求，去獲取本身已延遲的 CI 狀態。<br>
-        ✅ TW641 巔峰版： 邊緣防護：Multi-CDN 攔截器，直接繞過不必要的 API 消耗，保護前端不崩潰。
-      </li>
-      
-      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); word-break: break-word; overflow-wrap: anywhere; font-weight: bold;">
-        📌 API 穩定度<br>
-        ❌ 原生架構： 極易觸發 GitHub 60 req/hr 限制，導致 404 白畫面死機。<br>
-        ✅ TW641 巔峰版： 實作 Rate Limit Protector，即使配額耗盡也能優雅降級，維持頁面運作。
-      </li>
+    <div style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); font-weight: bold;">
+      <div style="word-break: break-word; overflow-wrap: anywhere;">📌 資料獲取邏輯</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">❌ 原生架構： 偽命題架構：前端無驗證 API 頻繁請求，去獲取本身已延遲的 CI 狀態。</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">✅ TW641 巔峰版： 邊緣防護：Multi-CDN 攔截器，直接繞過不必要的 API 消耗，保護前端不崩潰。</div>
+    </div>
+    
+    <div style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); font-weight: bold;">
+      <div style="word-break: break-word; overflow-wrap: anywhere;">📌 API 穩定度</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">❌ 原生架構： 極易觸發 GitHub 60 req/hr 限制，導致 404 白畫面死機。</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">✅ TW641 巔峰版： 實作 Rate Limit Protector，即使配額耗盡也能優雅降級，維持頁面運作。</div>
+    </div>
 
-      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); word-break: break-word; overflow-wrap: anywhere; font-weight: bold;">
-        📌 DOM 渲染效能<br>
-        ❌ 原生架構： 頻繁讀寫引發 Layout Thrashing，且有 H2 錯接 H4 的語義錯誤。<br>
-        ✅ TW641 巔峰版： 導入 rAF 渲染阻塞防抖 (Render-blocking Debounce)，將 O(n) 重繪收斂為 O(1)。
-      </li>
+    <div style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); font-weight: bold;">
+      <div style="word-break: break-word; overflow-wrap: anywhere;">📌 DOM 渲染效能</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">❌ 原生架構： 頻繁讀寫引發 Layout Thrashing，且有 H2 錯接 H4 的語義錯誤。</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">✅ TW641 巔峰版： 導入 rAF 渲染阻塞防抖 (Render-blocking Debounce)，將 O(n) 重繪收斂為 O(1)。</div>
+    </div>
 
-      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); word-break: break-word; overflow-wrap: anywhere; font-weight: bold;">
-        📌 Lighthouse 效能<br>
-        ❌ 原生架構： 效能 89-93 (甚至無法滿分)<br>
-        👑 TW641 巔峰版： 全項 100 滿分 (效能、無障礙、SEO、最佳做法)
-      </li>
+    <div style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); font-weight: bold;">
+      <div style="word-break: break-word; overflow-wrap: anywhere;">📌 Lighthouse 效能</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">❌ 原生架構： 效能 89-93 (甚至無法滿分)</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">👑 TW641 巔峰版： 全項 100 滿分 (效能、無障礙、SEO、最佳做法)</div>
+    </div>
 
-      <li style="padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); word-break: break-word; overflow-wrap: anywhere; font-weight: bold;">
-        📌 系統災難復原<br>
-        ❌ 原生架構： 曾發生長達 45 天的靜默當機 (Silent Outage)，無備援機制。<br>
-        ✅ TW641 巔峰版： 引入 jsDelivr Multi-CDN 智能容災與手動 ♻️ Purge Cache，確保最高可用性。
-      </li>
-    </ul>
+    <div style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); font-weight: bold;">
+      <div style="word-break: break-word; overflow-wrap: anywhere;">📌 系統災難復原</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">❌ 原生架構： 曾發生長達 45 天的靜默當機 (Silent Outage)，無備援機制。</div>
+      <div style="word-break: break-word; overflow-wrap: anywhere; margin-top: 4px;">✅ TW641 巔峰版： 引入 jsDelivr Multi-CDN 智能容災與手動 ♻️ Purge Cache，確保最高可用性。</div>
+    </div>
 
     ---
 
