@@ -33,6 +33,8 @@
   }, { rootMargin: '200px 0px' }); // 提早 200px 預先載入，確保滑動體驗平滑無縫隙
 
   // 1. 攔截並代理瀏覽器原生 fetch API (Network Proxy)
+  let logoFetchCount = 0; // 🛡️ 狀態變數：用於記錄 TW641.png 的 fetch 請求次數
+
   const origFetch = window.fetch;
   window.fetch = async function(...args) {
     let reqUrl = '';
@@ -59,6 +61,15 @@
         status: 200,
         headers: { 'Content-Type': 'application/json' }
       });
+    }
+
+    // 🛡️ 靜態圖片重複請求防禦：攔截多餘的 TW641.png 請求 (僅放行第一次，後續回傳空實體以節省流量)
+    if (reqUrl.includes('TW641.png')) {
+      if (logoFetchCount >= 1) {
+        console.warn('🛡️ 已攔截多餘的 TW641.png 請求:', reqUrl);
+        return new Response(new Blob([''], { type: 'image/png' }), { status: 200 });
+      }
+      logoFetchCount++;
     }
 
     reqUrl = fix(reqUrl); 
