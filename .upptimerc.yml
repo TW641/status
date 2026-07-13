@@ -373,15 +373,38 @@ status-website:
     本頁面基於傳統 GitHub Actions 架構。然而，其原生設計存在嚴重的架構性缺陷（所謂的「偽命題」）：系統仰賴容易耗盡額度 (60 req/hr) 的前端 API，去頻繁請求因 Cron 排程而早已過期 (Stale) 的狀態資料，極易觸發 Rate Limit 導致頁面崩潰。<br>
     為突破此極限，本站已由 TW641 進行深度重構：<strong>摒棄原生脆弱的獲取機制，全面導入 Multi-CDN 快取攔截、API 速率防護網，以及底層 DOM 渲染防抖 (rAF) 優化</strong>。將原本緩慢且不穩定的架構，強行推升至 Lighthouse 的四項指標：效能、無障礙功能、最佳做法、搜尋引擎最佳化 (SEO)，全面達成 100 滿分的極致巔峰。目前此頁面已被降級為「長時間的觀測參考」，即時監測請依賴上方的新世代 Edge-native 核心。
     <br>
-    ⚖️ **核心監測架構性能指標對比：**
+    <strong>⚖️ 核心監測架構性能指標對比：</strong>
+    <ul style="list-style-type: none; padding-left: 0; margin-top: 12px; font-size: 14px;">
+      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); overflow-wrap: anywhere;">
+        <strong style="font-size: 15px; color: #58a6ff;">📌 資料獲取邏輯</strong><br>
+        <span style="color: #ff6b6b;">❌ <b>原生架構：</b></span> 偽命題架構：前端無驗證 API 頻繁請求，去獲取本身已延遲的 CI 狀態。<br>
+        <span style="color: #51cf66;">✅ <b>TW641 巔峰版：</b></span> 邊緣防護：Multi-CDN 攔截器，直接繞過不必要的 API 消耗，保護前端不崩潰。
+      </li>
+      
+      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); overflow-wrap: anywhere;">
+        <strong style="font-size: 15px; color: #58a6ff;">📌 API 穩定度</strong><br>
+        <span style="color: #ff6b6b;">❌ <b>原生架構：</b></span> 極易觸發 GitHub 60 req/hr 限制，導致 404 白畫面死機。<br>
+        <span style="color: #51cf66;">✅ <b>TW641 巔峰版：</b></span> 實作 Rate Limit Protector，即使配額耗盡也能優雅降級，維持頁面運作。
+      </li>
 
-    | 評估維度 | 原生 Upptime (AnandChowdhary 版本) | TW641 巔峰優化版 (我的版本) |
-    | :--- | :--- | :--- |
-    | **資料獲取邏輯** | 偽命題架構：前端無驗證 API 頻繁請求，去獲取本身已延遲的 CI 狀態。 | 邊緣防護：Multi-CDN 攔截器，直接繞過不必要的 API 消耗，保護前端不崩潰。 |
-    | **API 穩定度** | 極易觸發 GitHub 60 req/hr 限制，導致 404 白畫面死機。 | 實作 Rate Limit Protector，即使配額耗盡也能優雅降級，維持頁面運作。 |
-    | **DOM 渲染效能** | 頻繁讀寫引發 Layout Thrashing，且有 H2 錯接 H4 的語義錯誤。 | 導入 rAF 渲染阻塞防抖 (Render-blocking Debounce)，將 O(n) 重繪收斂為 O(1)。 |
-    | **Lighthouse 效能** | 效能 89-93 (甚至無法滿分) | **全項 100 滿分 (效能、無障礙、SEO、最佳做法)** |
-    | **系統災難復原** | 曾發生長達 45 天的靜默當機 (Silent Outage)，無備援機制。 | 引入 jsDelivr Multi-CDN 智能容災與手動 ♻️ Purge Cache，確保最高可用性。 |
+      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); overflow-wrap: anywhere;">
+        <strong style="font-size: 15px; color: #58a6ff;">📌 DOM 渲染效能</strong><br>
+        <span style="color: #ff6b6b;">❌ <b>原生架構：</b></span> 頻繁讀寫引發 Layout Thrashing，且有 H2 錯接 H4 的語義錯誤。<br>
+        <span style="color: #51cf66;">✅ <b>TW641 巔峰版：</b></span> 導入 rAF 渲染阻塞防抖 (Render-blocking Debounce)，將 O(n) 重繪收斂為 O(1)。
+      </li>
+
+      <li style="margin-bottom: 12px; padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); overflow-wrap: anywhere;">
+        <strong style="font-size: 15px; color: #58a6ff;">📌 Lighthouse 效能</strong><br>
+        <span style="color: #ff6b6b;">❌ <b>原生架構：</b></span> 效能 89-93 (甚至無法滿分)<br>
+        <span style="color: #51cf66;">👑 <b>TW641 巔峰版：</b></span> <b>全項 100 滿分</b> (效能、無障礙、SEO、最佳做法)
+      </li>
+
+      <li style="padding: 12px; border: 1px solid #444; border-radius: 8px; background: rgba(255, 255, 255, 0.04); overflow-wrap: anywhere;">
+        <strong style="font-size: 15px; color: #58a6ff;">📌 系統災難復原</strong><br>
+        <span style="color: #ff6b6b;">❌ <b>原生架構：</b></span> 曾發生長達 45 天的靜默當機 (Silent Outage)，無備援機制。<br>
+        <span style="color: #51cf66;">✅ <b>TW641 巔峰版：</b></span> 引入 jsDelivr Multi-CDN 智能容災與手動 ♻️ Purge Cache，確保最高可用性。
+      </li>
+    </ul>
 
     ---
 
