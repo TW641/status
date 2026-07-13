@@ -33,8 +33,6 @@
   }, { rootMargin: '200px 0px' }); // 提早 200px 預先載入，確保滑動體驗平滑無縫隙
 
   // 1. 攔截並代理瀏覽器原生 fetch API (Network Proxy)
-  let logoFetchCount = 0; // 🛡️ 狀態變數：用於記錄 TW641.png 的 fetch 請求次數
-
   const origFetch = window.fetch;
   window.fetch = async function(...args) {
     let reqUrl = '';
@@ -61,24 +59,6 @@
         status: 200,
         headers: { 'Content-Type': 'application/json' }
       });
-    }
-
-    // 🛡️ 靜態圖片重複請求防禦與 Failover 機制：優先嘗試從 Cache API 提取，失敗則強制要求瀏覽器使用記憶體/磁碟快取
-    if (reqUrl.includes('TW641.png')) {
-      if (logoFetchCount >= 1) {
-        try {
-          const cachedRes = await caches.match(reqUrl);
-          if (cachedRes) {
-            console.warn('🛡️ 已從 Cache API (Failover) 成功提取 TW641.png，阻斷實體網路請求:', reqUrl);
-            return cachedRes.clone();
-          }
-        } catch (e) {}
-        
-        console.warn('🛡️ 啟動 Failover 機制：強制瀏覽器底層優先讀取本地記憶體或磁碟快取 (force-cache):', reqUrl);
-        if (!args[1]) args[1] = {};
-        args[1].cache = 'force-cache'; // 強制指示瀏覽器略過網路，優先從 disk/memory cache 提取
-      }
-      logoFetchCount++;
     }
 
     reqUrl = fix(reqUrl); 
@@ -210,8 +190,12 @@
   // 腳本載入時立即執行初次掃描，處理初始掛載的 DOM
   scanAndFixDOM();
 
-  // 啟動 MutationObserver，持續監聽 Svelte 後續渲染引發的 DOM 節點異動
-  new MutationObserver(scanAndFixDOM).observe(document.documentElement, { 
+  // 🚀 [極限強化] 透過 requestAnimationFrame 合併掃描，徹底消除 Svelte 水合作用 (Hydration) 引發的大量強制重排與 TBT 阻塞
+  let scanFrame;
+  new MutationObserver(() => {
+    if (scanFrame) cancelAnimationFrame(scanFrame);
+    scanFrame = requestAnimationFrame(scanAndFixDOM);
+  }).observe(document.documentElement, { 
     childList: true, 
     subtree: true, 
     attributes: true,         
