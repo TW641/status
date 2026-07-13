@@ -63,11 +63,20 @@
       });
     }
 
-    // 🛡️ 靜態圖片重複請求防禦：攔截多餘的 TW641.png 請求 (僅放行第一次，後續回傳空實體以節省流量)
+    // 🛡️ 靜態圖片重複請求防禦與 Failover 機制：優先嘗試從 Cache API 提取，失敗則強制要求瀏覽器使用記憶體/磁碟快取
     if (reqUrl.includes('TW641.png')) {
       if (logoFetchCount >= 1) {
-        console.warn('🛡️ 已攔截多餘的 TW641.png 請求:', reqUrl);
-        return new Response(new Blob([''], { type: 'image/png' }), { status: 200 });
+        try {
+          const cachedRes = await caches.match(reqUrl);
+          if (cachedRes) {
+            console.warn('🛡️ 已從 Cache API (Failover) 成功提取 TW641.png，阻斷實體網路請求:', reqUrl);
+            return cachedRes.clone();
+          }
+        } catch (e) {}
+        
+        console.warn('🛡️ 啟動 Failover 機制：強制瀏覽器底層優先讀取本地記憶體或磁碟快取 (force-cache):', reqUrl);
+        if (!args[1]) args[1] = {};
+        args[1].cache = 'force-cache'; // 強制指示瀏覽器略過網路，優先從 disk/memory cache 提取
       }
       logoFetchCount++;
     }
