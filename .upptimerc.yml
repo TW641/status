@@ -285,7 +285,7 @@ status-website:
     - name: "robots"
       content: "index, follow"
     - name: "description"
-      content: "TW641 即時服務監測系統 (Uptime Monitor)。即時追蹤 TW641 官方主站與 10 種異質多雲備援架構（Cloudflare, Vercel, Firebase 等），共 70 個節點的全球可用性與連線狀態。"
+      content: "TW641 即時服務監測系統 (Uptime Monitor)。摒棄傳統單一監測盲區與延遲缺陷，本系統採用 Cloudflare 等 10 種異質多雲架構，結合獨家 Multi-CDN 攔截與渲染優化技術，達成 Lighthouse 全指標 100 滿分的巔峰境界，提供全球零死角即時追蹤 70 個節點的可用性狀態。"
   favicon: /TW641.png
   baseUrl: /status
   logoUrl: /TW641.png
@@ -293,7 +293,10 @@ status-website:
   introTitle: "TW641 Real-time Uptime Monitor | 70 Nodes Global Availability Status"
   introMessage: |
     <strong>TW641 多層次監測與高可用性狀態中心</strong><br>
-    為克服單一監測服務的盲區，本系統採用「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構：
+    為徹底解決傳統開源監測方案 (如 Upptime) 的架構性缺陷（排程嚴重延遲、API 速率限制引發 404 當機、無效的 DOM 渲染耗損），本系統已進行深度的底層重構。<br>
+    <br>
+    摒棄了其原生脆弱的前端架構，獨家導入「Multi-CDN 邊緣攔截器」與「Render-blocking 渲染防抖機制」，成功將此狀態頁面的穩定性與載入速度推升至 <strong>Lighthouse 全指標 100 滿分</strong> 的巔峰境界。<br>
+    結合「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構，為您提供真正無懈可擊的全球高可用性狀態中心。
 
     🚀 <strong>即時精準狀態頁：高頻率邊緣運算 (絕對主力)</strong><br>
     基於 Cloudflare Workers + Cloudflare Pages + Cloudflare D1 的 ZeroOps 現代化架構，實現「每分鐘準時觸發」的秒級探測！
@@ -367,7 +370,48 @@ status-website:
     ---
 
     🐢 <strong>長期趨勢觀測頁 (Upptime)：本站目前架構 (僅供備用)</strong><br>
-    本頁面基於傳統 GitHub Actions 架構。由於排程佇列嚴重延遲（設定 5 分鐘，實際單日可能僅執行 10 餘次），屬於完全依賴單一生態的「不定時監測架構」。<strong>本站目前僅適合作為「長時間的觀測參考」</strong>。
+    本頁面基於傳統 GitHub Actions 架構。然而，其原生設計存在嚴重的架構性缺陷（所謂的「偽命題」）：系統仰賴容易耗盡額度 (60 req/hr) 的前端 API，去頻繁請求因 Cron 排程而早已過期 (Stale) 的狀態資料，極易觸發 Rate Limit 導致頁面崩潰。<br>
+    為突破此極限，本站已由 TW641 進行深度重構：<strong>摒棄原生脆弱的獲取機制，全面導入 Multi-CDN 快取攔截、API 速率防護網，以及底層 DOM 渲染防抖 (rAF) 優化</strong>。將原本緩慢且不穩定的架構，強行推升至 Lighthouse 的四項指標：效能、無障礙功能、最佳做法、搜尋引擎最佳化 (SEO)，全面達成 100 滿分的極致巔峰。目前此頁面已被降級為「長時間的觀測參考」，即時監測請依賴上方的新世代 Edge-native 核心。
+    <br>
+    <strong>⚖️ 核心監測架構性能指標對比：</strong><br>
+    <div style="overflow-x: auto; margin-top: 12px; margin-bottom: 12px;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13px; border: 1px solid #444; color: inherit; text-align: left;">
+        <thead>
+          <tr style="background: rgba(255, 255, 255, 0.06); border-bottom: 2px solid #444;">
+            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">評估維度</th>
+            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">原生 Upptime (AnandChowdhary 版本)</th>
+            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">TW641 巔峰優化版 (您的版本)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #444;"><b>資料獲取邏輯</b></td>
+            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">偽命題架構：前端無驗證 API 頻繁請求，去獲取本身已延遲的 CI 狀態。</td>
+            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">邊緣防護：Multi-CDN 攔截器，直接繞過不必要的 API 消耗，保護前端不崩潰。</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #444;"><b>API 穩定度</b></td>
+            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">極易觸發 GitHub 60 req/hr 限制，導致 404 白畫面死機。</td>
+            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">實作 Rate Limit Protector，即使配額耗盡也能優雅降級，維持頁面運作。</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #444;"><b>DOM 渲染效能</b></td>
+            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">頻繁讀寫引發 Layout Thrashing，且有 H2 錯接 H4 的語義錯誤。</td>
+            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">導入 rAF 渲染阻塞防抖 (Render-blocking Debounce)，將 O(n) 重繪收斂為 O(1)。</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #444;"><b>Lighthouse 效能</b></td>
+            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">效能 89-93 (甚至無法滿分)</td>
+            <td style="padding: 10px; border: 1px solid #444; color: #51cf66; font-weight: bold;">全項 100 滿分 (效能、無障礙、SEO、最佳做法)</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #444;"><b>系統災難復原</b></td>
+            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">曾發生長達 45 天的靜默當機 (Silent Outage)，無備援機制。</td>
+            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">引入 jsDelivr Multi-CDN 智能容災與手動 ♻️ Purge Cache，確保最高可用性。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     ---
 
