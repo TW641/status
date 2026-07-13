@@ -380,7 +380,7 @@ status-website:
           <tr style="background: rgba(255, 255, 255, 0.06); border-bottom: 2px solid #444;">
             <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">評估維度</th>
             <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">原生 Upptime (AnandChowdhary 版本)</th>
-            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">TW641 巔峰優化版 (您的版本)</th>
+            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">TW641 巔峰優化版 (我的版本)</th>
           </tr>
         </thead>
         <tbody>
