@@ -14,34 +14,17 @@
   fetchTargets.add('https://cdn.jsdelivr.net/gh/TW641/status@master/cache-interceptor.js');
 
   // ========================================================
-  // 🛡️ 新增：底層核心原型鏈同步攔截 (徹底解決瀏覽器同步載入圖片導致的 404 洩漏)
+  // 🛡️ 新增：底層核心原型鏈同步攔截 (專注防護 CSS 背景圖 404 洩漏)
   // ========================================================
   
-  // 1. 攔截 Element.prototype.setAttribute 確保以屬性寫入時同步修正
+  // 攔截 Element.prototype.setAttribute：當 Svelte 寫入 style (背景圖) 或 src 時，同步將舊網址修正，讓瀏覽器連發出 404 請求的機會都沒有
   const origSetAttribute = Element.prototype.setAttribute;
   Element.prototype.setAttribute = function(name, value) {
-    if (name === 'src' && typeof value === 'string' && value.includes('/status/master/')) {
+    if ((name === 'src' || name === 'style') && typeof value === 'string' && value.includes('/status/master/')) {
       value = fix(value);
     }
     return origSetAttribute.call(this, name, value);
   };
-
-  // 2. 攔截 HTMLImageElement.prototype.src 屬性賦值，在瀏覽器發起請求前同步攔截
-  const imgDescriptor = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
-  if (imgDescriptor && imgDescriptor.set) {
-    const origSrcSet = imgDescriptor.set;
-    Object.defineProperty(HTMLImageElement.prototype, 'src', {
-      set: function(value) {
-        if (typeof value === 'string' && value.includes('/status/master/')) {
-          value = fix(value);
-        }
-        origSrcSet.call(this, value);
-      },
-      get: imgDescriptor.get,
-      configurable: true,
-      enumerable: true
-    });
-  }
 
   // ========================================================
 
@@ -74,13 +57,7 @@
       return origFetch.apply(this, args);
     }
 
-    // 防禦性攔截 1：若 Fetch 請求仍殘留舊路由網址，直接防禦性 Mock 200，阻止控制台報錯
-    if (reqUrl.includes('/status/master/')) {
-      console.warn('🛡️ 已攔截殘留的舊路由 Fetch 請求並模擬為 200 空回應:', reqUrl);
-      return new Response('', { status: 200 });
-    }
-
-    // 防禦性攔截 2：GitHub 速率保護限制攔截
+    // 🛡️ 防禦性攔截：GitHub 速率保護限制攔截
     if (reqUrl.includes('api.github.com/repos/TW641/status/issues') || 
         reqUrl.includes('api.github.com/repos/TW641/status/commits')) {
       console.warn('🛡️ 已攔截 GitHub API 請求並模擬 (Mock) 為空陣列，防止消耗配額:', reqUrl);
@@ -112,7 +89,7 @@
           console.error(`⚠️ GitHub API 回傳錯誤 (${response.status})，已自動攔截並模擬為 200 狀態碼以維持前端穩定。`);
           return new Response(JSON.stringify([]), { status: 200, headers: { 'Content-Type': 'application/json' } });
         }
-        // 防禦性攔截 3：若 CDN 資源請求失敗（如某些圖表尚未生成），一律模擬 200 避免爆紅字
+        // 若 CDN 資源請求失敗（如某些圖表尚未生成），一律模擬 200 避免爆紅字
         if (reqUrl.includes('cdn.jsdelivr.net')) {
           console.error(`⚠️ jsDelivr 資源回傳錯誤 (${response.status})，已自動攔截並模擬為 200 狀態碼:`, reqUrl);
           return new Response('', { status: 200 });
