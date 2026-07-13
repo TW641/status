@@ -373,45 +373,15 @@ status-website:
     本頁面基於傳統 GitHub Actions 架構。然而，其原生設計存在嚴重的架構性缺陷（所謂的「偽命題」）：系統仰賴容易耗盡額度 (60 req/hr) 的前端 API，去頻繁請求因 Cron 排程而早已過期 (Stale) 的狀態資料，極易觸發 Rate Limit 導致頁面崩潰。<br>
     為突破此極限，本站已由 TW641 進行深度重構：<strong>摒棄原生脆弱的獲取機制，全面導入 Multi-CDN 快取攔截、API 速率防護網，以及底層 DOM 渲染防抖 (rAF) 優化</strong>。將原本緩慢且不穩定的架構，強行推升至 Lighthouse 的四項指標：效能、無障礙功能、最佳做法、搜尋引擎最佳化 (SEO)，全面達成 100 滿分的極致巔峰。目前此頁面已被降級為「長時間的觀測參考」，即時監測請依賴上方的新世代 Edge-native 核心。
     <br>
-    <strong>⚖️ 核心監測架構性能指標對比：</strong><br>
-    <div style="overflow-x: auto; margin-top: 12px; margin-bottom: 12px;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 13px; border: 1px solid #444; color: inherit; text-align: left;">
-        <thead>
-          <tr style="background: rgba(255, 255, 255, 0.06); border-bottom: 2px solid #444;">
-            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">評估維度</th>
-            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">原生 Upptime (AnandChowdhary 版本)</th>
-            <th style="padding: 10px; border: 1px solid #444; font-weight: bold;">TW641 巔峰優化版 (我的版本)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #444;"><b>資料獲取邏輯</b></td>
-            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">偽命題架構：前端無驗證 API 頻繁請求，去獲取本身已延遲的 CI 狀態。</td>
-            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">邊緣防護：Multi-CDN 攔截器，直接繞過不必要的 API 消耗，保護前端不崩潰。</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #444;"><b>API 穩定度</b></td>
-            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">極易觸發 GitHub 60 req/hr 限制，導致 404 白畫面死機。</td>
-            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">實作 Rate Limit Protector，即使配額耗盡也能優雅降級，維持頁面運作。</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #444;"><b>DOM 渲染效能</b></td>
-            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">頻繁讀寫引發 Layout Thrashing，且有 H2 錯接 H4 的語義錯誤。</td>
-            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">導入 rAF 渲染阻塞防抖 (Render-blocking Debounce)，將 O(n) 重繪收斂為 O(1)。</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #444;"><b>Lighthouse 效能</b></td>
-            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">效能 89-93 (甚至無法滿分)</td>
-            <td style="padding: 10px; border: 1px solid #444; color: #51cf66; font-weight: bold;">全項 100 滿分 (效能、無障礙、SEO、最佳做法)</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #444;"><b>系統災難復原</b></td>
-            <td style="padding: 10px; border: 1px solid #444; color: #ff6b6b;">曾發生長達 45 天的靜默當機 (Silent Outage)，無備援機制。</td>
-            <td style="padding: 10px; border: 1px solid #444; color: #51cf66;">引入 jsDelivr Multi-CDN 智能容災與手動 ♻️ Purge Cache，確保最高可用性。</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    ⚖️ **核心監測架構性能指標對比：**
+
+    | 評估維度 | 原生 Upptime (AnandChowdhary 版本) | TW641 巔峰優化版 (我的版本) |
+    | :--- | :--- | :--- |
+    | **資料獲取邏輯** | 偽命題架構：前端無驗證 API 頻繁請求，去獲取本身已延遲的 CI 狀態。 | 邊緣防護：Multi-CDN 攔截器，直接繞過不必要的 API 消耗，保護前端不崩潰。 |
+    | **API 穩定度** | 極易觸發 GitHub 60 req/hr 限制，導致 404 白畫面死機。 | 實作 Rate Limit Protector，即使配額耗盡也能優雅降級，維持頁面運作。 |
+    | **DOM 渲染效能** | 頻繁讀寫引發 Layout Thrashing，且有 H2 錯接 H4 的語義錯誤。 | 導入 rAF 渲染阻塞防抖 (Render-blocking Debounce)，將 O(n) 重繪收斂為 O(1)。 |
+    | **Lighthouse 效能** | 效能 89-93 (甚至無法滿分) | **全項 100 滿分 (效能、無障礙、SEO、最佳做法)** |
+    | **系統災難復原** | 曾發生長達 45 天的靜默當機 (Silent Outage)，無備援機制。 | 引入 jsDelivr Multi-CDN 智能容災與手動 ♻️ Purge Cache，確保最高可用性。 |
 
     ---
 
