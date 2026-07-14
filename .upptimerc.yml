@@ -504,7 +504,7 @@ status-website:
       href: "https://tw641status.pages.dev/"
     - title: "🏛️ TW641 博物館官方首頁"
       href: "https://tw641.github.io/"
-    - title: "💻 TW641 GitHub 官方首頁"
+    - title: "💻 TW641 GitHub"
       href: "https://github.com/TW641"
     - title: "♻️ 取得最新資料"
       href: "#purge-cache"
