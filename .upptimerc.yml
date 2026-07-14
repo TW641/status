@@ -296,7 +296,8 @@ status-website:
     為徹底解決傳統開源監測方案 (如 Upptime) 的架構性缺陷（排程嚴重延遲、API 速率限制引發 404 當機、無效的 DOM 渲染耗損），本系統已進行深度的底層重構。<br>
     <br>
     捨棄了其原生脆弱的前端架構，獨家導入「Multi-CDN 邊緣攔截器」與「微任務同步阻斷結合延遲載入 (Lazy Load) 機制」，成功將此狀態頁面的穩定性與載入速度推升至 <strong>Lighthouse 全指標 100 滿分</strong> 的巔峰境界。<br>
-    結合「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構，為您提供真正無懈可擊的全球高可用性狀態中心。
+    結合「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構，為您提供真正無懈可擊的全球高可用性狀態中心。<br>
+    <br>
 
     🚀 <strong>即時精準狀態頁：高頻率邊緣運算 (絕對主力)</strong><br>
     基於 Cloudflare Workers + Cloudflare Pages + Cloudflare D1 的 ZeroOps 現代化架構，實現「每分鐘準時觸發」的秒級探測！
@@ -307,8 +308,8 @@ status-website:
     <li><strong>高頻率即時指標</strong>：狀態頁面直觀顯示「最近 60 次檢查」的可用性，以及該區間內「最快」、「平均」與「最慢」的伺服器回應時間。</li>
     <li><strong>24 小時延遲分析</strong>：點選「最近 60 次檢查」條狀圖，即可展開最近一日的「平均延遲」、「P95 延遲」與「24 小時延遲狀態折線圖」。您亦可點選清單中的特定服務，獨立檢視該服務近 24 小時的動態。</li>
     <li><strong>60 天中斷明細紀錄</strong>：點選上方「近 60 天可用性」的單日條狀圖，將彈出當日「服務中斷明細」與總中斷時間（若系統穩定，則顯示如：<code>2026/7/11 總計: 0s 當天沒有紀錄到中斷。</code>）。</li>
-    <li>👑 TW641 Status 主力頁： <a href="https://tw641status.pages.dev/" target="_blank">https://tw641status.pages.dev/</a></li>
-    <li>👑 TW641 Uptimer 主力頁： <a href="https://tw641uptimer.pages.dev/" target="_blank">https://tw641uptimer.pages.dev/</a></li>
+    <li>👑 TW641 Status 主力狀態頁： <a href="https://tw641status.pages.dev/" target="_blank">https://tw641status.pages.dev/</a></li>
+    <li>👑 TW641 Uptimer 主力狀態頁： <a href="https://tw641uptimer.pages.dev/" target="_blank">https://tw641uptimer.pages.dev/</a></li>
     </ul>
 
     ---
@@ -319,12 +320,12 @@ status-website:
     TW641 Padavan CAKE 專案已獲國際最高權威「Bufferbloat.net」官方審查並合併收錄！<br>
     官方直接以「Padavan (TW641’s CAKE Port)」作為專屬署名，將專案主站連結永久鑲嵌於權威名單之中。這份無可取代的國際官方背書，成功讓本專案打入全球對抗網路延遲的核心陣營。<br>
     【全球極速備援站】十全十美：10 大官方主站及鏡像備援網站。<br>
-    官方首頁在 Google PageSpeed Insights 針對極端環境的模擬測速中，【效能、無障礙功能、最佳做法、SEO】四項指標皆達 100 滿分！<br><br>
+    官方首頁在 Google PageSpeed Insights 針對極端環境的模擬測速中，【效能、無障礙功能、最佳做法、SEO】四項指標皆達 100 滿分！<br>
 
     <strong>&#91;台灣 x 丹麥 x 瑞典&#93; 國際最高權威 Bufferbloat.net 官方收錄與 Toke 博士親自修改：</strong>
 
     <ul>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/" target="_blank">Bufferbloat.net 全球官方認證名單：What Can I Do About Bufferbloat?</a><br>🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/" target="_blank">https://www.bufferbloat.net/projects/bloat/wiki/What&#95;can&#95;I&#95;do&#95;about&#95;Bufferbloat/</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What%5Fcan%5FI%5Fdo%5Fabout%5FBufferbloat/" target="_blank">Bufferbloat.net 全球官方認證名單：What Can I Do About Bufferbloat?</a><br>🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What%5Fcan%5FI%5Fdo%5Fabout%5FBufferbloat/" target="_blank">https://www.bufferbloat.net/projects/bloat/wiki/What&#95;can&#95;I&#95;do&#95;about&#95;Bufferbloat/</a></li>
     <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="_blank">官方審查合併紀錄 (PR #94)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="_blank">https://github.com/tohojo/bufferbloat-net/pull/94</a></li>
     <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="_blank">Toke 博士親自修正排版紀錄 (Commit c5961c7)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="_blank">https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92</a></li>
     </ul>
@@ -414,11 +415,19 @@ status-website:
     >
     > ✅ **TW641 巔峰版：** 導入微任務 (Microtask) 同步移除錯誤的 CSS 變數，結合 IntersectionObserver 延遲載入，徹底消滅 404 偷跑與畫面卡頓 (Jank)。
 
-    > 📌 **Lighthouse 效能**
+    > 📌 **Google 官方實測 PageSpeed Insights Lighthouse 計算效能分數**
     >
-    > ❌ **原生架構：** 效能 74-88 (甚至無法滿分)
+    > ❌ **原生架構：** 效能 74-88 (Upptime 老舊架構缺陷，Google 官方實測無法滿分)
     >
-    > 👑 **TW641 巔峰版：** **全項 100 滿分** (效能、無障礙、SEO、最佳做法)
+    > 📉 74分 Google 官方實測 A：<a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r</a>
+    >
+    > 📉 88分 Google 官方實測 B：<a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd</a>
+    >
+    > 👑 **TW641 巔峰版：** **全項 100 滿分** (效能、無障礙、SEO、最佳做法，Google 官方實測權威認證全面滿分)
+    >
+    > 🏆 100分 Google 官方實測 A：<a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/wm83sba8gz" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/wm83sba8gz</a>
+    >
+    > 🏆 100分 Google 官方實測 B：<a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/3uf86epya8" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/3uf86epya8</a>
 
     > 📌 **系統災難復原**
     >
@@ -492,10 +501,12 @@ status-website:
     </details>
 
   navbar:
-    - title: Status
-      href: /status
-    - title: GitHub
-      href: https://github.com/$OWNER
+    - title: "👑 TW641 Status 狀態頁"
+      href: "https://tw641status.pages.dev/"
+    - title: "🏛️ TW641 博物館官方首頁"
+      href: "https://tw641.github.io/"
+    - title: "💻 TW641 GitHub 官方首頁"
+      href: "https://github.com/TW641"
     - title: "♻️ 取得最新資料"
       href: "#purge-cache"
 
