@@ -418,15 +418,17 @@ status-website:
     >
     > ❌ **原生架構：** 效能 74~88分 (過時且老舊的 Upptime 架構缺陷，Google 官方實測無法滿分)
     >
-    > 📉 74分 Google 官方實測 A：<a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r</a>
-    >
-    > 📉 88分 Google 官方實測 B：<a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd</a>
+    > <ul style="list-style-type: none; padding-left: 0; margin-top: 8px; margin-bottom: 16px;">
+    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">📉 74分 Google 官方實測 A：<br><a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r</a></li>
+    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">📉 88分 Google 官方實測 B：<br><a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd</a></li>
+    > </ul>
     >
     > 👑 **TW641 巔峰版：** **全項 100 滿分** (效能、無障礙、SEO、最佳做法，Google 官方實測權威認證全面滿分)
     >
-    > 🏆 100分 Google 官方實測 A：<a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye</a>
-    >
-    > 🏆 100分 Google 官方實測 B：<a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh</a>
+    > <ul style="list-style-type: none; padding-left: 0; margin-top: 8px; margin-bottom: 8px;">
+    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🏆 100分 Google 官方實測 A：<br><a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye</a></li>
+    > <li style="word-break: break-word; overflow-wrap: anywhere;">🏆 100分 Google 官方實測 B：<br><a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh</a></li>
+    > </ul>
 
     > 📌 **系統災難復原**
     >
