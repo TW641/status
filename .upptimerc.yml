@@ -500,6 +500,10 @@ status-website:
     </details>
 
   navbar:
+    - title: "👑 TW641 Status 即時狀態頁"
+      href: "https://tw641status.pages.dev/"
+    - title: "🏛️ TW641 博物館官方首頁"
+      href: "https://tw641.github.io/"
     - title: "💻 TW641 GitHub 官方首頁"
       href: "https://github.com/TW641"
     - title: "♻️ 取得最新資料"
