@@ -307,8 +307,8 @@ status-website:
     <li><strong>高頻率即時指標</strong>：狀態頁面直觀顯示「最近 60 次檢查」的可用性，以及該區間內「最快」、「平均」與「最慢」的伺服器回應時間。</li>
     <li><strong>24 小時延遲分析</strong>：點選「最近 60 次檢查」條狀圖，即可展開最近一日的「平均延遲」、「P95 延遲」與「24 小時延遲狀態折線圖」。您亦可點選清單中的特定服務，獨立檢視該服務近 24 小時的動態。</li>
     <li><strong>60 天中斷明細紀錄</strong>：點選上方「近 60 天可用性」的單日條狀圖，將彈出當日「服務中斷明細」與總中斷時間（若系統穩定，則顯示如：<code>2026/7/11 總計: 0s 當天沒有紀錄到中斷。</code>）。</li>
-    <li>👑 TW641 Status 主力狀態頁： <a href="https://tw641status.pages.dev/" target="_blank">https://tw641status.pages.dev/</a></li>
-    <li>👑 TW641 Uptimer 主力狀態頁： <a href="https://tw641uptimer.pages.dev/" target="_blank">https://tw641uptimer.pages.dev/</a></li>
+    <li>👑 TW641 Status 主力狀態頁： <a href="https://tw641status.pages.dev/" target="&#95;blank">https://tw641status.pages.dev/</a></li>
+    <li>👑 TW641 Uptimer 主力狀態頁： <a href="https://tw641uptimer.pages.dev/" target="&#95;blank">https://tw641uptimer.pages.dev/</a></li>
     </ul>
 
     ---
@@ -324,33 +324,33 @@ status-website:
     <strong>&#91;台灣 x 丹麥 x 瑞典&#93; 國際最高權威 Bufferbloat.net 官方收錄與 Toke 博士親自修改：</strong>
 
     <ul>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What%5Fcan%5FI%5Fdo%5Fabout%5FBufferbloat/" target="_blank">Bufferbloat.net 全球官方認證名單：What Can I Do About Bufferbloat?</a><br>🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What%5Fcan%5FI%5Fdo%5Fabout%5FBufferbloat/" target="_blank">https://www.bufferbloat.net/projects/bloat/wiki/What&#95;can&#95;I&#95;do&#95;about&#95;Bufferbloat/</a></li>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="_blank">官方審查合併紀錄 (PR #94)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="_blank">https://github.com/tohojo/bufferbloat-net/pull/94</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="_blank">Toke 博士親自修正排版紀錄 (Commit c5961c7)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="_blank">https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What%5Fcan%5FI%5Fdo%5Fabout%5FBufferbloat/" target="&#95;blank">Bufferbloat.net 全球官方認證名單：What Can I Do About Bufferbloat?</a><br>🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What%5Fcan%5FI%5Fdo%5Fabout%5FBufferbloat/" target="&#95;blank">https://www.bufferbloat.net/projects/bloat/wiki/What&#95;can&#95;I&#95;do&#95;about&#95;Bufferbloat/</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="&#95;blank">官方審查合併紀錄 (PR #94)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="&#95;blank">https://github.com/tohojo/bufferbloat-net/pull/94</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="&#95;blank">Toke 博士親自修正排版紀錄 (Commit c5961c7)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="&#95;blank">https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92</a></li>
     </ul>
 
     <strong>TW641 | Padavan CAKE OpenWrt 25.12 路由器韌體與 Dave Täht 數位典藏博物館：</strong>
 
     <ul>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/" target="_blank">【博物館首頁】Dave Täht 數位典藏博物館 (官方主站 - GitHub Pages)</a><br>🔗 <a href="https://tw641.github.io/" target="_blank">https://tw641.github.io/</a></li>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">【音樂祭特別企劃】Dave's Guitar: Thank You Music Festival 2026 (Dedicated to Dave Täht & Every Unsung Hero in the World — and You.)</a><br>🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">https://tw641.github.io/daves-guitar-2026/</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="_blank">【開源專案說明書】Padavan-CAKE 雲端編譯懶人包</a><br>🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="_blank">https://tw641.github.io/Padavan-CAKE/</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/" target="&#95;blank">【博物館首頁】Dave Täht 數位典藏博物館 (官方主站 - GitHub Pages)</a><br>🔗 <a href="https://tw641.github.io/" target="&#95;blank">https://tw641.github.io/</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="&#95;blank">【音樂祭特別企劃】Dave's Guitar: Thank You Music Festival 2026 (Dedicated to Dave Täht & Every Unsung Hero in the World — and You.)</a><br>🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="&#95;blank">https://tw641.github.io/daves-guitar-2026/</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="&#95;blank">【開源專案說明書】Padavan-CAKE 雲端編譯懶人包</a><br>🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="&#95;blank">https://tw641.github.io/Padavan-CAKE/</a></li>
     </ul>
 
     <strong>Upptime 核心組件優化成果：</strong>
 
     <ul>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="_blank">https://github.com/upptime/upptime/pull/1168</a></li>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="_blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="_blank">https://github.com/upptime/upptime/pull/1169</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="&#95;blank">&#91;Bug&#93;&#91;Solved by TW641 / TWShiyuLiou1997&#93; Fix Graphs CI workflow malfunction from 2026-05-21 to 2026-07-04 by TWShiyuLiou1997 · Pull Request #1168 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1168" target="&#95;blank">https://github.com/upptime/upptime/pull/1168</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="&#95;blank">:bug: Set up Node 20 for generated graphs by AnandChowdhary · Pull Request #308 · upptime/uptime-monitor</a><br>🔗 <a href="https://github.com/upptime/uptime-monitor/pull/308" target="&#95;blank">https://github.com/upptime/uptime-monitor/pull/308</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="&#95;blank">feat: Multi-CDN Production Optimization (jsDelivr) & CI Graphs Node.js Fix by TWShiyuLiou1997 · Pull Request #1169 · upptime/upptime</a><br>🔗 <a href="https://github.com/upptime/upptime/pull/1169" target="&#95;blank">https://github.com/upptime/upptime/pull/1169</a></li>
     </ul>
 
     <strong>Uptimer 國際化與介面體驗優化成果：</strong>
 
     <ul>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="_blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
-    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="_blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="_blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="&#95;blank">i18n(zh-TW): complete and refine Traditional Chinese (Taiwan) localization by TWShiyuLiou1997 · Pull Request #94 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/94" target="&#95;blank">https://github.com/VrianCao/Uptimer/pull/94</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="&#95;blank">style(i18n): refine list view toggle and precision-target group tip for zh-TW by TWShiyuLiou1997 · Pull Request #95 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/95" target="&#95;blank">https://github.com/VrianCao/Uptimer/pull/95</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="&#95;blank">style(i18n): refine bulk assign action labels for zh-TW by TWShiyuLiou1997 · Pull Request #96 · VrianCao/Uptimer</a><br>🔗 <a href="https://github.com/VrianCao/Uptimer/pull/96" target="&#95;blank">https://github.com/VrianCao/Uptimer/pull/96</a></li>
     </ul>
 
     ---
@@ -361,31 +361,31 @@ status-website:
     本系統涵蓋 10 個雲端平台的 70 個節點，採用交叉監測與自我監測技術：
 
     <ul>
-    <li>1. <a href="https://tw641.github.io/" target="_blank">GitHub Pages - TW641 官方主站與子專案</a>（7 個）</li>
-    <li>2. <a href="https://tw641.pages.dev/" target="_blank">Cloudflare Pages - 備援網站</a>（7 個）</li>
-    <li>3. <a href="https://www.tw641.workers.dev/" target="_blank">Cloudflare Workers - 備援網站</a>（7 個）</li>
-    <li>4. <a href="https://tw641t.web.app/" target="_blank">Firebase Hosting - 備援網站</a>（7 個）</li>
-    <li>5. <a href="https://tw641t.firebaseapp.com/" target="_blank">FirebaseApp.com - 備用網域</a>（7 個）</li>
-    <li>6. <a href="https://tw641.gitlab.io/" target="_blank">GitLab Pages - 備援網站</a>（7 個）</li>
-    <li>7. <a href="https://tw641.netlify.app/" target="_blank">Netlify - 備援網站</a>（7 個）</li>
-    <li>8. <a href="https://tw641.vercel.app/" target="_blank">Vercel - 備援網站</a>（7 個）</li>
-    <li>9. <a href="https://tw641.onrender.com/" target="_blank">Render - 備援網站</a>（7 個）</li>
-    <li>10. <a href="https://tw641.surge.sh/" target="_blank">Surge - 備援網站</a>（7 個）</li>
+    <li>1. <a href="https://tw641.github.io/" target="&#95;blank">GitHub Pages - TW641 官方主站與子專案</a>（7 個）</li>
+    <li>2. <a href="https://tw641.pages.dev/" target="&#95;blank">Cloudflare Pages - 備援網站</a>（7 個）</li>
+    <li>3. <a href="https://www.tw641.workers.dev/" target="&#95;blank">Cloudflare Workers - 備援網站</a>（7 個）</li>
+    <li>4. <a href="https://tw641t.web.app/" target="&#95;blank">Firebase Hosting - 備援網站</a>（7 個）</li>
+    <li>5. <a href="https://tw641t.firebaseapp.com/" target="&#95;blank">FirebaseApp.com - 備用網域</a>（7 個）</li>
+    <li>6. <a href="https://tw641.gitlab.io/" target="&#95;blank">GitLab Pages - 備援網站</a>（7 個）</li>
+    <li>7. <a href="https://tw641.netlify.app/" target="&#95;blank">Netlify - 備援網站</a>（7 個）</li>
+    <li>8. <a href="https://tw641.vercel.app/" target="&#95;blank">Vercel - 備援網站</a>（7 個）</li>
+    <li>9. <a href="https://tw641.onrender.com/" target="&#95;blank">Render - 備援網站</a>（7 個）</li>
+    <li>10. <a href="https://tw641.surge.sh/" target="&#95;blank">Surge - 備援網站</a>（7 個）</li>
     </ul>
 
     即時監測服務包括：
 
     <ul>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/" target="_blank">TW641 GitHub Pages 官方主站 - 首頁</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">TW641 GitHub Pages 官方主站 - daves-guitar-2026</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="_blank">TW641 GitHub Pages 官方主站 - Padavan-CAKE</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/sch%5Fcake/" target="_blank">TW641 GitHub Pages 官方主站 - sch&#95;cake</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/padavan-builder-workflow/" target="_blank">TW641 GitHub Pages 官方主站 - padavan-builder-workflow</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/padavan-ng/" target="_blank">TW641 GitHub Pages 官方主站 - padavan-ng</a></li>
-    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/padavan-4.4/" target="_blank">TW641 GitHub Pages 官方主站 - padavan-4.4</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/" target="&#95;blank">TW641 GitHub Pages 官方主站 - 首頁</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="&#95;blank">TW641 GitHub Pages 官方主站 - daves-guitar-2026</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="&#95;blank">TW641 GitHub Pages 官方主站 - Padavan-CAKE</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/sch%5Fcake/" target="&#95;blank">TW641 GitHub Pages 官方主站 - sch&#95;cake</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/padavan-builder-workflow/" target="&#95;blank">TW641 GitHub Pages 官方主站 - padavan-builder-workflow</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/padavan-ng/" target="&#95;blank">TW641 GitHub Pages 官方主站 - padavan-ng</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/padavan-4.4/" target="&#95;blank">TW641 GitHub Pages 官方主站 - padavan-4.4</a></li>
     </ul>
 
-    以及 <a href="https://tw641.pages.dev/" target="_blank">Cloudflare Pages</a>、<a href="https://www.tw641.workers.dev/" target="_blank">Cloudflare Workers</a>、<a href="https://tw641t.web.app/" target="_blank">Firebase Hosting</a>、<a href="https://tw641t.firebaseapp.com/" target="_blank">FirebaseApp.com</a>、<a href="https://tw641.gitlab.io/" target="_blank">GitLab Pages</a>、<a href="https://tw641.netlify.app/" target="_blank">Netlify</a>、<a href="https://tw641.vercel.app/" target="_blank">Vercel</a>、<a href="https://tw641.onrender.com/" target="_blank">Render</a>、<a href="https://tw641.surge.sh/" target="_blank">Surge</a> 等多個備援平台的監測。
+    以及 <a href="https://tw641.pages.dev/" target="&#95;blank">Cloudflare Pages</a>、<a href="https://www.tw641.workers.dev/" target="&#95;blank">Cloudflare Workers</a>、<a href="https://tw641t.web.app/" target="&#95;blank">Firebase Hosting</a>、<a href="https://tw641t.firebaseapp.com/" target="&#95;blank">FirebaseApp.com</a>、<a href="https://tw641.gitlab.io/" target="&#95;blank">GitLab Pages</a>、<a href="https://tw641.netlify.app/" target="&#95;blank">Netlify</a>、<a href="https://tw641.vercel.app/" target="&#95;blank">Vercel</a>、<a href="https://tw641.onrender.com/" target="&#95;blank">Render</a>、<a href="https://tw641.surge.sh/" target="&#95;blank">Surge</a> 等多個備援平台的監測。
     </div>
 
     ---
@@ -419,15 +419,15 @@ status-website:
     > ❌ **原生架構：** 效能 74~88分 (過時且老舊的 Upptime 架構缺陷，Google 官方實測無法滿分)
     >
     > <ul style="list-style-type: none; padding-left: 0; margin-top: 8px; margin-bottom: 16px;">
-    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">📉 74分 Google 官方實測 A：<br><a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r</a></li>
-    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">📉 88分 Google 官方實測 B：<br><a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd</a></li>
+    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">📉 74分 Google 官方實測 A：<br><a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r" target="&#95;blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r</a></li>
+    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">📉 88分 Google 官方實測 B：<br><a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd" target="&#95;blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/0dqdhx5ecd</a></li>
     > </ul>
     >
     > 👑 **TW641 巔峰版：** **全項 100 滿分** (效能、無障礙、SEO、最佳做法，Google 官方實測權威認證全面滿分)
     >
     > <ul style="list-style-type: none; padding-left: 0; margin-top: 8px; margin-bottom: 8px;">
-    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🏆 100分 Google 官方實測 A：<br><a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye</a></li>
-    > <li style="word-break: break-word; overflow-wrap: anywhere;">🏆 100分 Google 官方實測 B：<br><a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh" target="_blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh</a></li>
+    > <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🏆 100分 Google 官方實測 A：<br><a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye" target="&#95;blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/ncv2kgjlye</a></li>
+    > <li style="word-break: break-word; overflow-wrap: anywhere;">🏆 100分 Google 官方實測 B：<br><a href="https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh" target="&#95;blank">https://pagespeed.web.dev/analysis/https-tw641-github-io-status/40mfi1d4lh</a></li>
     > </ul>
 
     > 📌 **系統災難復原**
@@ -442,62 +442,62 @@ status-website:
     引導搜尋引擎收錄子節點並確認全網交叉可用性（為確保瀏覽器效能，<strong>請點選特定服務獨立展開載入預覽畫面</strong>）：
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">👑 <b>1. TW641 Status 主力頁</b> (點這裡展開預覽) | 🔗 <a href="https://tw641status.pages.dev/" target="_blank">點這裡直接前往網站：https://tw641status.pages.dev/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">👑 <b>1. TW641 Status 主力頁</b> (點這裡展開預覽) | 🔗 <a href="https://tw641status.pages.dev/" target="&#95;blank">點這裡直接前往網站：https://tw641status.pages.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641status.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Status Monitor"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">👑 <b>2. TW641 Uptimer 主力頁</b> (點這裡展開預覽) | 🔗 <a href="https://tw641uptimer.pages.dev/" target="_blank">點這裡直接前往網站：https://tw641uptimer.pages.dev/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">👑 <b>2. TW641 Uptimer 主力頁</b> (點這裡展開預覽) | 🔗 <a href="https://tw641uptimer.pages.dev/" target="&#95;blank">點這裡直接前往網站：https://tw641uptimer.pages.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641uptimer.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Uptimer Monitor"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>3. GitHub Pages 官方主站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.github.io/" target="_blank">點這裡直接前往網站：https://tw641.github.io/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>3. GitHub Pages 官方主站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.github.io/" target="&#95;blank">點這裡直接前往網站：https://tw641.github.io/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.github.io/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="GitHub Pages"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>4. Cloudflare Pages 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.pages.dev/" target="_blank">點這裡直接前往網站：https://tw641.pages.dev/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>4. Cloudflare Pages 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.pages.dev/" target="&#95;blank">點這裡直接前往網站：https://tw641.pages.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.pages.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Cloudflare Pages"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>5. Cloudflare Workers 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://www.tw641.workers.dev/" target="_blank">點這裡直接前往網站：https://www.tw641.workers.dev/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>5. Cloudflare Workers 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://www.tw641.workers.dev/" target="&#95;blank">點這裡直接前往網站：https://www.tw641.workers.dev/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://www.tw641.workers.dev/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Cloudflare Workers"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>6. Firebase Hosting 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641t.web.app/" target="_blank">點這裡直接前往網站：https://tw641t.web.app/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>6. Firebase Hosting 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641t.web.app/" target="&#95;blank">點這裡直接前往網站：https://tw641t.web.app/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641t.web.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Firebase Hosting"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>7. FirebaseApp.com 備用網域</b> (點這裡展開預覽) | 🔗 <a href="https://tw641t.firebaseapp.com/" target="_blank">點這裡直接前往網站：https://tw641t.firebaseapp.com/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>7. FirebaseApp.com 備用網域</b> (點這裡展開預覽) | 🔗 <a href="https://tw641t.firebaseapp.com/" target="&#95;blank">點這裡直接前往網站：https://tw641t.firebaseapp.com/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641t.firebaseapp.com/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="FirebaseApp"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>8. GitLab Pages 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.gitlab.io/" target="_blank">點這裡直接前往網站：https://tw641.gitlab.io/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>8. GitLab Pages 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.gitlab.io/" target="&#95;blank">點這裡直接前往網站：https://tw641.gitlab.io/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.gitlab.io/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="GitLab Pages"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>9. Netlify 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.netlify.app/" target="_blank">點這裡直接前往網站：https://tw641.netlify.app/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>9. Netlify 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.netlify.app/" target="&#95;blank">點這裡直接前往網站：https://tw641.netlify.app/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.netlify.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Netlify"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>10. Vercel 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.vercel.app/" target="_blank">點這裡直接前往網站：https://tw641.vercel.app/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>10. Vercel 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.vercel.app/" target="&#95;blank">點這裡直接前往網站：https://tw641.vercel.app/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.vercel.app/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Vercel"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>11. Render 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.onrender.com/" target="_blank">點這裡直接前往網站：https://tw641.onrender.com/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>11. Render 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.onrender.com/" target="&#95;blank">點這裡直接前往網站：https://tw641.onrender.com/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.onrender.com/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Render"></iframe></div>
     </details>
 
     <details style="margin-bottom: 10px;">
-    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>12. Surge 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.surge.sh/" target="_blank">點這裡直接前往網站：https://tw641.surge.sh/</a></summary>
+    <summary style="cursor: pointer; word-break: break-word; overflow-wrap: anywhere;">🌐 <b>12. Surge 備援站</b> (點這裡展開預覽) | 🔗 <a href="https://tw641.surge.sh/" target="&#95;blank">點這裡直接前往網站：https://tw641.surge.sh/</a></summary>
     <div style="margin-top: 10px;"><iframe src="https://tw641.surge.sh/" width="100%" height="250" style="border:1px solid #444; border-radius: 6px;" loading="lazy" title="Surge"></iframe></div>
     </details>
 
