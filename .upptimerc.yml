@@ -298,7 +298,6 @@ status-website:
     捨棄了其原生脆弱的前端架構，獨家導入「Multi-CDN 邊緣攔截器」與「微任務同步阻斷結合延遲載入 (Lazy Load) 機制」，成功將此狀態頁面的穩定性與載入速度推升至 <strong>Lighthouse 全指標 100 滿分</strong> 的巔峰境界。<br>
     結合「異質」、「多雲」、「自我監測」與「交叉監測」的雙核心架構，為您提供真正無懈可擊的全球高可用性狀態中心。<br>
     <br>
-
     🚀 <strong>即時精準狀態頁：高頻率邊緣運算 (絕對主力)</strong><br>
     基於 Cloudflare Workers + Cloudflare Pages + Cloudflare D1 的 ZeroOps 現代化架構，實現「每分鐘準時觸發」的秒級探測！
     
@@ -417,7 +416,7 @@ status-website:
 
     > 📌 **Google 官方實測 PageSpeed Insights Lighthouse 計算效能分數**
     >
-    > ❌ **原生架構：** 效能 74-88 (Upptime 老舊架構缺陷，Google 官方實測無法滿分)
+    > ❌ **原生架構：** 效能 74~88分 (過時且老舊的 Upptime 架構缺陷，Google 官方實測無法滿分)
     >
     > 📉 74分 Google 官方實測 A：<a href="https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r" target="_blank">https://pagespeed.web.dev/analysis/https-demo-upptime-js-org/7jnww6i45r</a>
     >
