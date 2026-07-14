@@ -314,8 +314,27 @@ status-website:
     ---
 
     🛠️ <strong>TW641 開源社群貢獻與 Pull Requests 技術索引</strong><br>
-    為推動開源監測架構的發展並加速搜尋引擎收錄，以下為本站維護者於核心專案提交之優化成果（點選超連結前往）：
-    
+    為推動開源生態發展並加速搜尋引擎收錄，以下為本站維護者於核心專案提交之優化成果與國際權威認證（點選超連結前往）：
+    <br><br>
+    TW641 Padavan CAKE 專案已獲國際最高權威「Bufferbloat.net」官方審查並合併收錄！官方直接以「Padavan (TW641’s CAKE Port)」作為專屬署名，將專案主站連結永久鑲嵌於權威名單之中。這份無可取代的國際官方背書，成功讓本專案打入全球對抗網路延遲的核心陣營。<br>
+    【全球極速備援站】十全十美：10 大官方主站及鏡像備援網站。官方首頁在 Google PageSpeed Insights 針對極端環境的模擬測速中，【效能、無障礙功能、最佳做法、SEO】四項指標皆達 100 滿分！<br><br>
+
+    <strong>[台灣 x 丹麥 x 瑞典] 國際最高權威 Bufferbloat.net 官方收錄與 Toke 博士親自修改：</strong>
+
+    <ul>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/" target="_blank">Bufferbloat.net 全球官方認證名單：What Can I Do About Bufferbloat?</a><br>🔗 <a href="https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/" target="_blank">https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="_blank">官方審查合併紀錄 (PR #94)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/pull/94" target="_blank">https://github.com/tohojo/bufferbloat-net/pull/94</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="_blank">Toke 博士親自修正排版紀錄 (Commit c5961c7)</a><br>🔗 <a href="https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92" target="_blank">https://github.com/tohojo/bufferbloat-net/commit/c5961c7d341974c65b7d8749c80c5bc7e9e2bc92</a></li>
+    </ul>
+
+    <strong>TW641 | Padavan CAKE OpenWrt 25.12 路由器韌體與 Dave Täht 數位典藏博物館：</strong>
+
+    <ul>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/" target="_blank">【博物館首頁】Dave Täht 數位典藏博物館 (官方主站 - GitHub Pages)</a><br>🔗 <a href="https://tw641.github.io/" target="_blank">https://tw641.github.io/</a></li>
+    <li style="margin-bottom: 12px; word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">【音樂祭特別企劃】Dave's Guitar: Thank You Music Festival 2026 (Dedicated to Dave Täht & Every Unsung Hero in the World — and You.)</a><br>🔗 <a href="https://tw641.github.io/daves-guitar-2026/" target="_blank">https://tw641.github.io/daves-guitar-2026/</a></li>
+    <li style="word-break: break-word; overflow-wrap: anywhere;">🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="_blank">【開源專案說明書】Padavan-CAKE 雲端編譯懶人包</a><br>🔗 <a href="https://tw641.github.io/Padavan-CAKE/" target="_blank">https://tw641.github.io/Padavan-CAKE/</a></li>
+    </ul>
+
     <strong>Upptime 核心組件優化成果：</strong>
 
     <ul>
@@ -395,7 +414,7 @@ status-website:
 
     > 📌 **Lighthouse 效能**
     >
-    > ❌ **原生架構：** 效能 89-93 (甚至無法滿分)
+    > ❌ **原生架構：** 效能 74-88 (甚至無法滿分)
     >
     > 👑 **TW641 巔峰版：** **全項 100 滿分** (效能、無障礙、SEO、最佳做法)
 
