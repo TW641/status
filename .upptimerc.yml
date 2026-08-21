@@ -513,12 +513,12 @@ status-website:
 
 workflowSchedule:
   graphs: "0 0 * * *"
-  responseTime: "*/5 * * * *"
+  responseTime: "*/30 * * * *"
   staticSite: "0 1 * * *"
   summary: "0 0 * * *"
   updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
-  uptime: "*/5 * * * *"
+  uptime: "*/30 * * * *"
 
 i18n:
   footer: "本狀態頁面由 [TW641](https://github.com/TW641) 建置與維護。返回 [TW641 官方主站](https://tw641.github.io/) | 👑 即時主力：[TW641 Status](https://tw641status.pages.dev/) ([原始碼](https://github.com/TW641/TW641Status)) & [TW641 Uptimer](https://tw641uptimer.pages.dev/) ([原始碼](https://github.com/TW641/TW641Uptimer)) | 備用架構：[本頁原始碼](https://github.com/TW641/status)"
