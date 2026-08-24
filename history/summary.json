@@ -48,7 +48,7 @@
     "uptimeYear": "99.94%",
     "time": 143,
     "timeDay": 118,
-    "timeWeek": 129,
+    "timeWeek": 128,
     "timeMonth": 121,
     "timeYear": 143,
     "dailyMinutesDown": {
@@ -124,7 +124,7 @@
     "uptimeYear": "100.00%",
     "time": 111,
     "timeDay": 88,
-    "timeWeek": 108,
+    "timeWeek": 107,
     "timeMonth": 109,
     "timeYear": 111,
     "dailyMinutesDown": {}
@@ -142,7 +142,7 @@
     "uptimeYear": "99.95%",
     "time": 129,
     "timeDay": 109,
-    "timeWeek": 132,
+    "timeWeek": 131,
     "timeMonth": 119,
     "timeYear": 129,
     "dailyMinutesDown": {
@@ -198,7 +198,7 @@
     "uptimeYear": "100.00%",
     "time": 117,
     "timeDay": 122,
-    "timeWeek": 127,
+    "timeWeek": 128,
     "timeMonth": 120,
     "timeYear": 117,
     "dailyMinutesDown": {}
@@ -216,7 +216,7 @@
     "uptimeYear": "100.00%",
     "time": 78,
     "timeDay": 83,
-    "timeWeek": 82,
+    "timeWeek": 83,
     "timeMonth": 80,
     "timeYear": 78,
     "dailyMinutesDown": {}
@@ -414,7 +414,7 @@
     "uptimeYear": "100.00%",
     "time": 71,
     "timeDay": 70,
-    "timeWeek": 77,
+    "timeWeek": 76,
     "timeMonth": 74,
     "timeYear": 71,
     "dailyMinutesDown": {}
@@ -450,7 +450,7 @@
     "uptimeYear": "100.00%",
     "time": 110,
     "timeDay": 115,
-    "timeWeek": 103,
+    "timeWeek": 104,
     "timeMonth": 111,
     "timeYear": 110,
     "dailyMinutesDown": {}
@@ -668,7 +668,7 @@
     "uptimeYear": "100.00%",
     "time": 32,
     "timeDay": 29,
-    "timeWeek": 28,
+    "timeWeek": 29,
     "timeMonth": 31,
     "timeYear": 32,
     "dailyMinutesDown": {}
@@ -758,7 +758,7 @@
     "uptimeYear": "100.00%",
     "time": 413,
     "timeDay": 370,
-    "timeWeek": 471,
+    "timeWeek": 472,
     "timeMonth": 429,
     "timeYear": 413,
     "dailyMinutesDown": {}
@@ -830,7 +830,7 @@
     "uptimeYear": "99.91%",
     "time": 453,
     "timeDay": 422,
-    "timeWeek": 408,
+    "timeWeek": 406,
     "timeMonth": 449,
     "timeYear": 453,
     "dailyMinutesDown": {
@@ -851,7 +851,7 @@
     "uptimeYear": "99.93%",
     "time": 180,
     "timeDay": 176,
-    "timeWeek": 184,
+    "timeWeek": 183,
     "timeMonth": 183,
     "timeYear": 180,
     "dailyMinutesDown": {
@@ -893,7 +893,7 @@
     "uptimeYear": "99.95%",
     "time": 187,
     "timeDay": 162,
-    "timeWeek": 181,
+    "timeWeek": 180,
     "timeMonth": 186,
     "timeYear": 187,
     "dailyMinutesDown": {
@@ -952,7 +952,7 @@
     "uptimeYear": "100.00%",
     "time": 191,
     "timeDay": 182,
-    "timeWeek": 195,
+    "timeWeek": 194,
     "timeMonth": 196,
     "timeYear": 191,
     "dailyMinutesDown": {}
@@ -988,7 +988,7 @@
     "uptimeYear": "100.00%",
     "time": 107,
     "timeDay": 110,
-    "timeWeek": 111,
+    "timeWeek": 112,
     "timeMonth": 110,
     "timeYear": 107,
     "dailyMinutesDown": {}
@@ -1186,7 +1186,7 @@
     "uptimeYear": "100.00%",
     "time": 216,
     "timeDay": 200,
-    "timeWeek": 201,
+    "timeWeek": 200,
     "timeMonth": 186,
     "timeYear": 216,
     "dailyMinutesDown": {}
@@ -1204,7 +1204,7 @@
     "uptimeYear": "100.00%",
     "time": 174,
     "timeDay": 179,
-    "timeWeek": 170,
+    "timeWeek": 169,
     "timeMonth": 171,
     "timeYear": 174,
     "dailyMinutesDown": {}
@@ -1215,14 +1215,14 @@
     "icon": "https://tw641.pages.dev/TW641.png",
     "slug": "tw-641-surge",
     "status": "down",
-    "uptime": "99.14%",
-    "uptimeDay": "99.31%",
-    "uptimeWeek": "99.90%",
-    "uptimeMonth": "99.01%",
-    "uptimeYear": "99.14%",
+    "uptime": "99.12%",
+    "uptimeDay": "98.39%",
+    "uptimeWeek": "99.77%",
+    "uptimeMonth": "98.98%",
+    "uptimeYear": "99.12%",
     "time": 799,
     "timeDay": 708,
-    "timeWeek": 692,
+    "timeWeek": 693,
     "timeMonth": 877,
     "timeYear": 799,
     "dailyMinutesDown": {
@@ -1232,7 +1232,7 @@
       "2026-07-30": 39,
       "2026-08-05": 90,
       "2026-08-10": 297,
-      "2026-08-24": 10
+      "2026-08-24": 23
     }
   },
   {
@@ -1241,14 +1241,14 @@
     "icon": "https://tw641.pages.dev/TW641.png",
     "slug": "tw-641-surge-daves-guitar-2026",
     "status": "down",
-    "uptime": "99.19%",
-    "uptimeDay": "99.35%",
-    "uptimeWeek": "99.91%",
-    "uptimeMonth": "99.10%",
-    "uptimeYear": "99.19%",
+    "uptime": "99.18%",
+    "uptimeDay": "98.43%",
+    "uptimeWeek": "99.78%",
+    "uptimeMonth": "99.07%",
+    "uptimeYear": "99.18%",
     "time": 484,
     "timeDay": 419,
-    "timeWeek": 525,
+    "timeWeek": 526,
     "timeMonth": 499,
     "timeYear": 484,
     "dailyMinutesDown": {
@@ -1257,7 +1257,7 @@
       "2026-07-24": 59,
       "2026-08-05": 90,
       "2026-08-10": 296,
-      "2026-08-24": 9
+      "2026-08-24": 23
     }
   },
   {
@@ -1266,14 +1266,14 @@
     "icon": "https://tw641.pages.dev/TW641.png",
     "slug": "tw-641-surge-padavan-cake",
     "status": "down",
-    "uptime": "99.20%",
-    "uptimeDay": "99.37%",
-    "uptimeWeek": "99.91%",
-    "uptimeMonth": "99.10%",
-    "uptimeYear": "99.20%",
+    "uptime": "99.18%",
+    "uptimeDay": "98.45%",
+    "uptimeWeek": "99.78%",
+    "uptimeMonth": "99.07%",
+    "uptimeYear": "99.18%",
     "time": 410,
     "timeDay": 367,
-    "timeWeek": 391,
+    "timeWeek": 392,
     "timeMonth": 391,
     "timeYear": 410,
     "dailyMinutesDown": {
@@ -1282,7 +1282,7 @@
       "2026-07-24": 58,
       "2026-08-05": 90,
       "2026-08-10": 296,
-      "2026-08-24": 9
+      "2026-08-24": 22
     }
   },
   {
@@ -1290,15 +1290,15 @@
     "url": "https://tw641.surge.sh/sch_cake/",
     "icon": "https://tw641.pages.dev/TW641.png",
     "slug": "tw-641-surge-sch-cake",
-    "status": "up",
-    "uptime": "99.21%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.12%",
-    "uptimeYear": "99.21%",
+    "status": "down",
+    "uptime": "99.20%",
+    "uptimeDay": "99.37%",
+    "uptimeWeek": "99.91%",
+    "uptimeMonth": "99.10%",
+    "uptimeYear": "99.20%",
     "time": 475,
     "timeDay": 851,
-    "timeWeek": 535,
+    "timeWeek": 536,
     "timeMonth": 487,
     "timeYear": 475,
     "dailyMinutesDown": {
@@ -1306,7 +1306,8 @@
       "2026-07-15": 166,
       "2026-07-24": 57,
       "2026-08-05": 89,
-      "2026-08-10": 295
+      "2026-08-10": 295,
+      "2026-08-24": 9
     }
   },
   {
@@ -1315,14 +1316,14 @@
     "icon": "https://tw641.pages.dev/TW641.png",
     "slug": "tw-641-surge-padavan-builder-workflow",
     "status": "down",
-    "uptime": "99.20%",
-    "uptimeDay": "99.42%",
-    "uptimeWeek": "99.92%",
-    "uptimeMonth": "99.11%",
-    "uptimeYear": "99.20%",
+    "uptime": "99.18%",
+    "uptimeDay": "98.50%",
+    "uptimeWeek": "99.79%",
+    "uptimeMonth": "99.08%",
+    "uptimeYear": "99.18%",
     "time": 433,
     "timeDay": 480,
-    "timeWeek": 464,
+    "timeWeek": 465,
     "timeMonth": 434,
     "timeYear": 433,
     "dailyMinutesDown": {
@@ -1331,7 +1332,7 @@
       "2026-07-24": 57,
       "2026-08-05": 89,
       "2026-08-10": 294,
-      "2026-08-24": 8
+      "2026-08-24": 22
     }
   },
   {
@@ -1340,14 +1341,14 @@
     "icon": "https://tw641.pages.dev/TW641.png",
     "slug": "tw-641-surge-padavan-ng",
     "status": "down",
-    "uptime": "99.20%",
-    "uptimeDay": "99.45%",
-    "uptimeWeek": "99.92%",
-    "uptimeMonth": "99.11%",
-    "uptimeYear": "99.20%",
+    "uptime": "99.19%",
+    "uptimeDay": "98.53%",
+    "uptimeWeek": "99.79%",
+    "uptimeMonth": "99.08%",
+    "uptimeYear": "99.19%",
     "time": 433,
     "timeDay": 773,
-    "timeWeek": 471,
+    "timeWeek": 472,
     "timeMonth": 436,
     "timeYear": 433,
     "dailyMinutesDown": {
@@ -1356,7 +1357,7 @@
       "2026-07-24": 56,
       "2026-08-05": 89,
       "2026-08-10": 293,
-      "2026-08-24": 8
+      "2026-08-24": 21
     }
   },
   {
@@ -1365,14 +1366,14 @@
     "icon": "https://tw641.pages.dev/TW641.png",
     "slug": "tw-641-surge-padavan-4-4",
     "status": "down",
-    "uptime": "99.27%",
-    "uptimeDay": "99.47%",
-    "uptimeWeek": "99.92%",
-    "uptimeMonth": "99.11%",
-    "uptimeYear": "99.27%",
+    "uptime": "99.26%",
+    "uptimeDay": "98.56%",
+    "uptimeWeek": "99.79%",
+    "uptimeMonth": "99.08%",
+    "uptimeYear": "99.26%",
     "time": 421,
     "timeDay": 351,
-    "timeWeek": 415,
+    "timeWeek": 416,
     "timeMonth": 419,
     "timeYear": 421,
     "dailyMinutesDown": {
@@ -1380,7 +1381,7 @@
       "2026-07-15": 166,
       "2026-08-05": 89,
       "2026-08-10": 292,
-      "2026-08-24": 8
+      "2026-08-24": 21
     }
   }
 ]
